@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --bodyFont: monospace;
+  --color-bg-linear :  linear-gradient(120deg, #111, #222);
+  --main-color: #1a1a1a;
+  --secondary-color: #333;
+  --thirdary-color: #444;
+}
+body {
+  @apply h-full w-full ;
+  background: var(--main-color);
+}
+/* About Header Of Pages*/
+
+header {
+  @apply flex w-full fixed top-0 z-10;
+  height: 75px;
+}
+.header-bg {
+  background-image:var(--color-bg-linear);
+}
+[data-row="middle"] {
+  @apply flex items-center justify-between relative;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+}
+.item-nav {
+  border-radius: 30px;
+  @apply text-blue-100 text-2xl font-semibold  hover:text-red-600 mx-7 transition  duration-700 ease-in hover:font-bold;
+}
+.menu-bar {
+  @apply lg:hidden  cursor-pointer transition duration-1000 ease-linear  hover:text-red-500;
+}
+.dropdown-menu {
+  @apply lg:hidden absolute text-center;
+  margin-top: 620px;
+  width: 100%;
+}
+
+.nav-dropped {
+  @apply overflow-hidden  hover:font-bold text-center right-0  list-none;
+  background-image: linear-gradient(
+    320deg,
+    rgb(0, 0, 255, 0.2),
+    rgb(57, 57, 147, 0.2),
+    rgb(22, 22, 91, 0.2)
+  );
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 10%;
+  padding: 0 25.5%;
+  height: 520px;
+}
+.item-nav-dropped {
+  @apply text-white   font-semibold my-16 py-9  text-4xl hover:text-red-600 hover:font-bold transition  duration-700 ease-in;
+  width: 100px;
+}
+footer {
+  height: 325px;
+  padding: 50px;
+  position: relative;
+  bottom: -164px;
+}
+/*About Header Of Pages*/
+/*About Main Of Home Page */
+[data-row="main-middle"] {
+  position: relative;
+  top: 130px;
+}
+
+.img1 img {
+  opacity: 0.5;
+}
+.img1 h1,
+p {
+  margin-left: 230px;
+  cursor: pointer;
+}
+.img1 h1 {
+  @apply absolute top-60  text-8xl text-white  font-bold;
+  font-family: var(--bodyFont);
+}
+.img1 p {
+  @apply absolute text-white text-4xl;
+  bottom: 90px;
+  height: 170px;
+  line-height: 28px;
+  margin-right: 202px;
+}
+.btn {
+  @apply cursor-pointer border-primary border-2 rounded-md font-semibold hover:text-primary  bg-primary hover:bg-opacity-0 text-white transition ease-linear duration-500;
+}
+
+.services-at-home {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.services-at-home .h1 {
+  @apply text-center  font-bold pt-6 mb-4 text-8xl text-white;
+  font-family: var(--bodyFont);
+}
+.services-at-home .p {
+  @apply text-3xl text-white pl-20 pt-10 pb-20 font-semibold;
+}
+.services-at-home .btn {
+  @apply text-2xl relative py-5 px-4;
+  margin: 30px 0;
+  left: 45%;
+}
+.services-at-home .services .service .title-and-desc h1 {
+  @apply text-center text-5xl font-bold text-white my-5;
+  line-height: 26px;
+  font-family: var(--bodyFont);
+}
+.services-at-home .services .service .title-and-desc p {
+  @apply text-center m-0 my-5 text-3xl pt-10 text-white;
+  line-height: 30px;
+}
+
+.simply-better {
+  background: var(--secondary-color);
+}
+.simply-better h1 {
+  @apply text-center text-primary pt-9 pb-3 text-3xl font-bold;
+  font-family: var(--bodyFont);
+}
+.simply-better p {
+  @apply m-0  text-white mb-8 py-3 text-center text-7xl;
+  font-family: var(--bodyFont);
+  line-height: 50px;
+}
+.simply-better .btn {
+  @apply text-2xl py-5 px-4 mt-9 mb-20;
+}
+
+.imgs-home-footer {
+  @apply flex justify-evenly overflow-hidden pt-16 pb-20;
+  background: var(--main-color);
+}
+.imgs-home-footer img {
+  width: 45%;
+}
+.saying {
+  background: var(--secondary-color);
+}
+.saying .the-saying {
+  @apply m-0 font-semibold text-white text-center text-3xl;
+  width: 70%;
+  line-height: 30px;
+  margin: 0px 15%;
+  padding-top: 16px;
+  font-family: var(--bodyFont);
+}
+.saying .the-writer {
+  @apply text-center text-5xl text-white py-11 font-bold;
+  font-family: var(--bodyFont);
+}
+
+/*About Main Of Home Page */
+footer {
+  @apply grid grid-cols-3;
+  background: var(--color-bg-linear);
+}
+
+footer .social-media {
+  @apply  m-12 text-center;
+}
+footer .social-media h1 {
+  @apply text-5xl font-bold text-primary mb-10;
+}
+footer .social-media i {
+  @apply text-6xl mx-5;
+  color: #b3bccb; 
+}
+footer .social-media i:hover,footer .site-menu ul li a:hover{
+ color: rgba(221, 120, 120, 0.773);
+ transition: 0.8s linear;
+}
+
+footer .site-menu {
+  @apply  m-12;
+}
+footer .site-menu h1 {
+  @apply font-bold text-primary text-5xl text-center;
+}
+footer .site-menu ul {
+  @apply text-center mt-10;
+}
+footer .site-menu ul li {
+  @apply mb-10;
+}
+footer .site-menu ul li a {
+  @apply text-3xl  text-white font-semibold;
+}
+
+footer .Skilltech2 {
+  @apply  m-12;
+}
+footer .Skilltech2 h1 {
+  @apply text-5xl text-center text-primary font-bold;
+}
+footer .Skilltech2 p {
+  @apply text-4xl  text-center m-0 font-semibold text-white mt-10;
+}
+/*About Footer Of Pages */
+/*About Footer Of Pages */
+
+
+/* About Main Of About Page */
+.the-p {
+font-family: var(--bodyFont);
+line-height: 57px;
+}
+.the-s-p {
+line-height: 24px;
+font-family: var(--bodyFont);
+}
+.hoha {
+background: var(--secondary-color);
+}
+.haho {
+background: var(--secondary-color);
+}
+.haho .hihi{
+width: 80%;
+margin-left: 10%;
+}
+.haho .hihi div {
+margin-bottom: 19px;
+}
+.haho .hihi div h1 {
+  @apply text-6xl text-white py-3 text-center font-mono font-extrabold;
+}
+.haho .hihi div p {
+  @apply m-0 text-3xl text-center py-4 text-white font-semibold;
+}
+.haho .hihi div img {
+  width: 40%;
+  margin-left: 30%;
+}
+.haho .hihi .item6 img {
+  /* this is because the icon does not was beatiful */
+  margin-left: 34%;
+}
+.section3 {
+background: var(--thirdary-color); 
+}
+.section3 h1 {
+font-family: var(--bodyFont);
+}
+.section4 {
+background:var(--thirdary-color);
+}
+.section4 div h1 {
+font-family: var(--bodyFont);
+}
+.section4 div p {
+width: 50%;
+margin-left: 25%;
+}
+
+
+.section4 div p {
+width: 50%;
+margin-left: 25%;
+}
+.section4 #imgs {
+width: 90%;
+margin-left: 5%;
+}
+/* About Main Of About Page */
