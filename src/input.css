@@ -293,7 +293,7 @@ margin-left: 5%;
   @apply text-white text-7xl font-bold;
   font-family: var(--bodyFont);
 }
-.Services .main-container .div .Section1-at-Services hr{
+.Services .main-container .div .Section1-at-Services hr {
   @apply bg-primary border-none;
   width: 109px;
   height: 1.75px;
