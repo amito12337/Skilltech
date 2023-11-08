@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 :root {
-  --bodyFont: monospace;
+  --body-font: 'Quicksand', sans-serif;
   --color-bg-linear :  linear-gradient(120deg, #111, #222);
   --main-color: #1a1a1a;
   --secondary-color: #333;
@@ -273,3 +274,101 @@ width: 90%;
 margin-left: 5%;
 }
 /* About Main Of About Page */
+
+/* About Main Of Services Page */
+.Services .main-container {
+  width: 80%;
+  margin-left: 10%;
+}
+.Services .main-container .div {
+  @apply  flex justify-between items-center;
+  width: 100%;
+  height: 490px;
+}
+.Services .main-container .div .Section1-at-Services {
+  @apply m-7;
+  width: 50%;
+}
+.Services .main-container .div .Section1-at-Services .first {
+  @apply text-white text-7xl font-bold;
+  font-family: var(--bodyFont);
+}
+.Services .main-container .div .Section1-at-Services hr{
+  @apply bg-primary border-none;
+  width: 109px;
+  height: 1.75px;
+  margin: 18px 0;
+}
+.Services .main-container .div .Section1-at-Services div {
+  @apply my-6;
+}
+.Services .main-container .div .Section1-at-Services div h1 {
+    @apply text-white text-4xl my-4 font-bold;
+}
+.Services .main-container .div .Section1-at-Services div p {
+  @apply m-0 text-white font-medium text-2xl;
+  line-height: 20px;
+}
+.Services .main-container .div .Section1-at-Services div .btn {
+  @apply py-4 px-7 mt-9;
+  margin-left: 25%;
+}
+.Services .main-container .div div img {
+  width: 650px;
+}
+
+.Services .main-container .price-list {
+  background: var(--secondary-color);
+}
+.Services .main-container .price-list .head p {
+  @apply m-0 text-primary font-medium text-center text-4xl py-3;
+  font-family: var(--body-font);
+}
+.Services .main-container .price-list .head h1 {
+  @apply text-white text-center font-semibold text-8xl my-4;
+}
+.Services .main-container .price-list .price-table {
+  @apply flex justify-between  gap-9;
+}
+.Services .main-container .price-list .price-table .column {
+}
+.Services .main-container .price-list .price-table .column .header {
+  @apply px-4 py-3 flex justify-between items-center;
+}
+.Services .main-container .price-list .price-table .column .header h1{
+  @apply text-4xl text-white font-semibold;
+  font-family: var(--body-font);
+}
+.Services .main-container .price-list .price-table .column .header .price {
+  @apply text-2xl text-white font-medium m-0;
+}
+.Services .main-container .price-list .price-table .column .Service-desc {
+  @apply m-0 text-white text-3xl font-semibold py-3 px-4;
+  line-height: 34px;
+}
+.Services .main-container .price-list .price-table .column .Service-desc1 {
+  @apply m-0 text-white text-3xl font-semibold pt-7 pb-9 px-4;
+  line-height: 38px;
+}
+.Services .main-container .price-list .price-table .column .Service-desc2 {
+  @apply m-0 text-white text-3xl font-semibold  px-4; 
+  line-height: 30px;
+}
+.Services .main-container .price-list .price-table .column .Service-desc3 {
+  @apply m-0 text-white text-3xl font-semibold px-4;
+  padding-bottom: 10.5px;
+  line-height: 40px;
+}
+.Services .main-container .price-list .price-table .column .Service-desc4 {
+  @apply m-0 text-white text-3xl font-semibold  px-4; 
+  line-height: 30px;
+}
+.Services .main-container .price-list .price-table .column hr {
+  @apply bg-primary border-none;
+  width: 100%;
+  height: 1.75px;
+  margin: 9px 0;
+}
+
+
+/* About Main Of Services Page */
