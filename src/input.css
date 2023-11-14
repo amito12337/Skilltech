@@ -278,7 +278,7 @@ margin-left: 5%;
 /* About Main Of Services Page */
 .Services .main-container {
   width: 80%;
-  margin-left: 10%;
+ padding-left: 10%
 }
 .Services .main-container .div {
   @apply  flex justify-between items-center;
@@ -316,59 +316,211 @@ margin-left: 5%;
 .Services .main-container .div div img {
   width: 650px;
 }
-
-.Services .main-container .price-list {
+.Services .price-list {
+  padding: 0 10%;
   background: var(--secondary-color);
 }
-.Services .main-container .price-list .head p {
+.Services .price-list .head p {
   @apply m-0 text-primary font-medium text-center text-4xl py-3;
   font-family: var(--body-font);
 }
-.Services .main-container .price-list .head h1 {
+.Services .price-list .head h1 {
   @apply text-white text-center font-semibold text-8xl my-4;
 }
-.Services .main-container .price-list .price-table {
+.Services .price-list .price-table {
   @apply flex justify-between  gap-9;
 }
-.Services .main-container .price-list .price-table .column {
-}
-.Services .main-container .price-list .price-table .column .header {
+.Services .price-list .price-table .column .header {
   @apply px-4 py-3 flex justify-between items-center;
 }
-.Services .main-container .price-list .price-table .column .header h1{
+.Services .price-list .price-table .column .header h1{
   @apply text-4xl text-white font-semibold;
   font-family: var(--body-font);
 }
-.Services .main-container .price-list .price-table .column .header .price {
+.Services .price-list .price-table .column .header .price {
   @apply text-2xl text-white font-medium m-0;
 }
-.Services .main-container .price-list .price-table .column .Service-desc {
-  @apply m-0 text-white text-3xl font-semibold py-3 px-4;
+.Services .price-list .price-table .column .Service-desc {
+  @apply m-0 text-white text-3xl font-semibold pt-3 pb-40 px-4;
   line-height: 34px;
 }
-.Services .main-container .price-list .price-table .column .Service-desc1 {
+.Services .price-list .price-table .column .Service-desc1 {
   @apply m-0 text-white text-3xl font-semibold pt-7 pb-9 px-4;
   line-height: 38px;
 }
-.Services .main-container .price-list .price-table .column .Service-desc2 {
+.Services .price-list .price-table .column .Service-desc2 {
   @apply m-0 text-white text-3xl font-semibold  px-4; 
   line-height: 30px;
 }
-.Services .main-container .price-list .price-table .column .Service-desc3 {
+.Services .price-list .price-table .column .Service-desc3 {
   @apply m-0 text-white text-3xl font-semibold px-4;
   padding-bottom: 10.5px;
   line-height: 40px;
 }
-.Services .main-container .price-list .price-table .column .Service-desc4 {
+.Services .price-list .price-table .column .Service-desc4 {
   @apply m-0 text-white text-3xl font-semibold  px-4; 
   line-height: 30px;
 }
-.Services .main-container .price-list .price-table .column hr {
+.Services .price-list .price-table .column hr {
   @apply bg-primary border-none;
   width: 100%;
   height: 1.75px;
   margin: 9px 0;
 }
 
+.Section2-at-services img {
+  @apply relative;
+  height: 393px;
+}
+.Section2-at-services .inside-section2 {
+  @apply absolute;
+  background: var(--thirdary-color);
+  bottom: 21%;
+  left: 10%;
+  width: 80%;
+}
+.Section2-at-services .inside-section2 .head h1 {
+ @apply text-white text-6xl font-semibold text-center py-3;
+ font-family: var(--body-font);
+}
+.Section2-at-services .inside-section2 .head p {
+  @apply text-white text-2xl font-medium text-center m-0 py-2 px-4;
+}
+.Section2-at-services .inside-section2 .main {
+  @apply grid grid-cols-4 gap-7;
+  width: 80%;
+  margin: 30px 0px 0px 10%;
+}
+.Section2-at-services .inside-section2 .main div {
+  padding: 20px;
+  background: var(--thirdary-color);
+  border-radius: 3px;
+}
+.Section2-at-services .inside-section2 .main div h1 {
+  @apply text-white text-5xl text-center font-semibold  mb-3;
+  font-family: var(--body-font)
+}
+.Section2-at-services .inside-section2 .main div p {
+    @apply text-white text-3xl text-center font-medium m-0;
+    font-family: var(--body-font);
+}
+.Section2-at-services .inside-section2 button {
+  @apply p-4;
+  margin-top: 10px;
+  margin-left: 47%;
+  margin-bottom: 5px;
+}
 
+.What-our-client-say {
+  @apply mt-16 pb-16;
+  background: var(--secondary-color);
+  
+}
+.What-our-client-say .main {
+  width: 80%;
+  margin-left: 10%;
+}
+.What-our-client-say .main .h1 {
+  @apply text-white text-7xl font-bold pt-20 pb-16;
+  font-family: var(--body-font);
+}
+.What-our-client-say .main  .feedlbacks {
+  @apply grid grid-cols-2 gap-12;
+}
+.What-our-client-say .main  .feedlbacks div hr {
+  @apply bg-primary border-none mb-2;
+  width: 40px;
+  height: 1.75px;
+}
+.What-our-client-say .main  .feedlbacks div .feedlback{
+  @apply m-0 text-white text-2xl font-medium mb-8;
+  width: 400px;
+  line-height: 25px;
+}
+.What-our-client-say .main  .feedlbacks div .informations {
+  @apply flex items-center;
+  width: 250px;
+}
+.What-our-client-say .main  .feedlbacks div .informations img {
+  @apply rounded-full;
+  width: 68px;
+}
+.What-our-client-say .main  .feedlbacks div .informations .identifications h1 {
+  @apply text-4xl text-white font-semibold ml-9;
+}
+.What-our-client-say .main  .feedlbacks div .informations .identifications p {
+  @apply text-xl text-white font-medium ml-9;
+}
 /* About Main Of Services Page */
+/*About Main Of Contact Page */
+[data-row="Contact-main"] {
+  margin-top: 130px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.have-a-question {
+  @apply grid grid-cols-3 gap-14
+}
+.have-a-question .col {
+  @apply py-6 pl-3 ;
+}
+.have-a-question .col-1 h1 {
+  @apply text-white text-7xl font-bold;
+  font-family: var(--body-font);
+}
+.have-a-question .col-1 p {
+  @apply text-white text-2xl pt-5 font-medium m-0;
+  line-height: 20px;
+  width: 300px;
+  font-family: var(--body-font);
+}
+.have-a-question .col-2 div {
+  @apply my-8;
+}
+.have-a-question .col-2 div h1 {
+  @apply text-4xl text-white font-medium;
+  font-family: var(--body-font);
+}
+.have-a-question .col-2 div p {
+  @apply m-0 text-white text-2xl my-4;
+}
+
+.have-a-question .col-3 #colored-lines-form {
+  border: 0.1px solid white;
+  height: 360px;
+  width: 250px;
+  position: relative;
+  padding: 10px 0 10px 0;
+}
+.have-a-question .col-3 #colored-lines-form .btn {
+  @apply py-5 px-8 absolute bottom-6 ;
+  margin-left: 37%;
+}
+.have-a-question .col-3 #colored-lines-form div {
+  width: 80%;
+  margin: 50px 0 30px 10%;
+}
+.have-a-question .col-3 #colored-lines-form .colored-line{
+  height: 1px;
+  width: 100%;
+  background-color: red;
+  margin-left: 0;
+  margin-bottom: 5px;
+  cursor: pointer;
+  position: relative;
+}
+.have-a-question .col-3 #colored-lines-form .colored-line input {
+  position: absolute;
+  top: -20px; /* يمكنك تعديل هذا الرقم حسب التصميم الخاص بك */
+  border: none;
+  outline: none;
+  background: transparent;
+  color: red;
+  width: 100%;
+}
+.have-a-question .col-3 #colored-lines-form .colored-line input:hover, input:focus {
+  color: white;
+}
+
+/*About Main Of Contact Page */

@@ -1298,7 +1298,7 @@ footer .Skilltech2 p {
 
 .Services .main-container {
   width: 80%;
-  margin-left: 10%;
+  padding-left: 10%
 }
 
 .Services .main-container .div {
@@ -1370,11 +1370,12 @@ footer .Skilltech2 p {
   width: 650px;
 }
 
-.Services .main-container .price-list {
+.Services .price-list {
+  padding: 0 10%;
   background: var(--secondary-color);
 }
 
-.Services .main-container .price-list .head p {
+.Services .price-list .head p {
   margin: 0px;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1387,7 +1388,7 @@ footer .Skilltech2 p {
   font-family: var(--body-font);
 }
 
-.Services .main-container .price-list .head h1 {
+.Services .price-list .head h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -1398,16 +1399,13 @@ footer .Skilltech2 p {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.Services .main-container .price-list .price-table {
+.Services .price-list .price-table {
   display: flex;
   justify-content: space-between;
   gap: 2.25rem;
 }
 
-.Services .main-container .price-list .price-table .column {
-}
-
-.Services .main-container .price-list .price-table .column .header {
+.Services .price-list .price-table .column .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1417,7 +1415,7 @@ footer .Skilltech2 p {
   padding-bottom: 0.75rem;
 }
 
-.Services .main-container .price-list .price-table .column .header h1 {
+.Services .price-list .price-table .column .header h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
@@ -1426,7 +1424,7 @@ footer .Skilltech2 p {
   font-family: var(--body-font);
 }
 
-.Services .main-container .price-list .price-table .column .header .price {
+.Services .price-list .price-table .column .header .price {
   margin: 0px;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1435,12 +1433,12 @@ footer .Skilltech2 p {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.Services .main-container .price-list .price-table .column .Service-desc {
+.Services .price-list .price-table .column .Service-desc {
   margin: 0px;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 10rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 600;
@@ -1449,7 +1447,7 @@ footer .Skilltech2 p {
   line-height: 34px;
 }
 
-.Services .main-container .price-list .price-table .column .Service-desc1 {
+.Services .price-list .price-table .column .Service-desc1 {
   margin: 0px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1463,7 +1461,7 @@ footer .Skilltech2 p {
   line-height: 38px;
 }
 
-.Services .main-container .price-list .price-table .column .Service-desc2 {
+.Services .price-list .price-table .column .Service-desc2 {
   margin: 0px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1475,7 +1473,7 @@ footer .Skilltech2 p {
   line-height: 30px;
 }
 
-.Services .main-container .price-list .price-table .column .Service-desc3 {
+.Services .price-list .price-table .column .Service-desc3 {
   margin: 0px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1488,7 +1486,7 @@ footer .Skilltech2 p {
   line-height: 40px;
 }
 
-.Services .main-container .price-list .price-table .column .Service-desc4 {
+.Services .price-list .price-table .column .Service-desc4 {
   margin: 0px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1500,7 +1498,7 @@ footer .Skilltech2 p {
   line-height: 30px;
 }
 
-.Services .main-container .price-list .price-table .column hr {
+.Services .price-list .price-table .column hr {
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(255 51 51 / var(--tw-bg-opacity));
@@ -1509,7 +1507,283 @@ footer .Skilltech2 p {
   margin: 9px 0;
 }
 
+.Section2-at-services img {
+  position: relative;
+  height: 393px;
+}
+
+.Section2-at-services .inside-section2 {
+  position: absolute;
+  background: var(--thirdary-color);
+  bottom: 21%;
+  left: 10%;
+  width: 80%;
+}
+
+.Section2-at-services .inside-section2 .head h1 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-family: var(--body-font);
+}
+
+.Section2-at-services .inside-section2 .head p {
+  margin: 0px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.Section2-at-services .inside-section2 .main {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.75rem;
+  width: 80%;
+  margin: 30px 0px 0px 10%;
+}
+
+.Section2-at-services .inside-section2 .main div {
+  padding: 20px;
+  background: var(--thirdary-color);
+  border-radius: 3px;
+}
+
+.Section2-at-services .inside-section2 .main div h1 {
+  margin-bottom: 0.75rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-family: var(--body-font);
+}
+
+.Section2-at-services .inside-section2 .main div p {
+  margin: 0px;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-family: var(--body-font);
+}
+
+.Section2-at-services .inside-section2 button {
+  padding: 1rem;
+  margin-top: 10px;
+  margin-left: 47%;
+  margin-bottom: 5px;
+}
+
+.What-our-client-say {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  background: var(--secondary-color);
+}
+
+.What-our-client-say .main {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.What-our-client-say .main .h1 {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-family: var(--body-font);
+}
+
+.What-our-client-say .main  .feedlbacks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.What-our-client-say .main  .feedlbacks div hr {
+  margin-bottom: 0.5rem;
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 51 51 / var(--tw-bg-opacity));
+  width: 40px;
+  height: 1.75px;
+}
+
+.What-our-client-say .main  .feedlbacks div .feedlback {
+  margin: 0px;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  width: 400px;
+  line-height: 25px;
+}
+
+.What-our-client-say .main  .feedlbacks div .informations {
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.What-our-client-say .main  .feedlbacks div .informations img {
+  border-radius: 9999px;
+  width: 68px;
+}
+
+.What-our-client-say .main  .feedlbacks div .informations .identifications h1 {
+  margin-left: 2.25rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.What-our-client-say .main  .feedlbacks div .informations .identifications p {
+  margin-left: 2.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 /* About Main Of Services Page */
+
+/*About Main Of Contact Page */
+
+[data-row="Contact-main"] {
+  margin-top: 130px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.have-a-question {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3.5rem;
+}
+
+.have-a-question .col {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0.75rem;
+}
+
+.have-a-question .col-1 h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-family: var(--body-font);
+}
+
+.have-a-question .col-1 p {
+  margin: 0px;
+  padding-top: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  line-height: 20px;
+  width: 300px;
+  font-family: var(--body-font);
+}
+
+.have-a-question .col-2 div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.have-a-question .col-2 div h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-family: var(--body-font);
+}
+
+.have-a-question .col-2 div p {
+  margin: 0px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.have-a-question .col-3 #colored-lines-form {
+  border: 0.1px solid white;
+  height: 360px;
+  width: 250px;
+  position: relative;
+  padding: 10px 0 10px 0;
+}
+
+.have-a-question .col-3 #colored-lines-form .btn {
+  position: absolute;
+  bottom: 1.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 37%;
+}
+
+.have-a-question .col-3 #colored-lines-form div {
+  width: 80%;
+  margin: 50px 0 30px 10%;
+}
+
+.have-a-question .col-3 #colored-lines-form .colored-line{
+  height: 1px;
+  width: 100%;
+  background-color: red;
+  margin-left: 0;
+  margin-bottom: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.have-a-question .col-3 #colored-lines-form .colored-line input {
+  position: absolute;
+  top: -20px;
+  /* يمكنك تعديل هذا الرقم حسب التصميم الخاص بك */
+  border: none;
+  outline: none;
+  background: transparent;
+  color: red;
+  width: 100%;
+}
+
+.have-a-question .col-3 #colored-lines-form .colored-line input:hover, input:focus {
+  color: white;
+}
+
+/*About Main Of Contact Page */
 
 @media (min-width: 0px) and (max-width: 780px) {
   .md\:block {

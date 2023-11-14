@@ -1,0 +1,110 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Skilltech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--This links is h=just use if the internet was not exist -->
+        <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css">
+        <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css">
+        <!--This links is h=just use if the internet was not exist -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="output.css" rel="stylesheet">
+    </head>
+    <body>
+        <header  class="bg-opacity-0">
+            <div data-row="middle">
+                <h1><a class="text-white text-8xl" href="index.html"><span class=" text-red-600 font-bold  ">S</span>killtech</a></h1>
+                <div class="flex justify-around items-center">
+                    <nav class="nav flex  list-none gap-9">
+                        <li><a class="md:hidden item-nav" href="index.html">Home</a></li>
+                        <li><a class="md:hidden item-nav" href="Services.html">Services</a></li>
+                        <li><a class="md:hidden item-nav" href="About.html">About US</a></li>
+                        <li><a class="md:hidden item-nav" href="Contact.html">Contact</a></li>
+                    </nav>
+                </div>
+                <div class="lg:hidden md:block icon-menu">
+                    <i onclick="showMenu()" style="color: aliceblue;" class="menu-bar fa-bars  fa-solid  fa-2xl">
+                    </i>
+                </div>
+                <div class="dropdown-menu  hidden">
+                    <nav class="nav-dropped">   
+                        <li class="item-nav-dropped"><a href="index.html">Home</a></li>
+                        <li class="item-nav-dropped"><a href="Services">Services</a></li>
+                        <li class="item-nav-dropped"><a href="About.html">About Us</a></li>
+                        <li class="item-nav-dropped"><a href="Contact">Contact Us</a></li>
+                    </nav>
+                </div>
+            </div>      
+        </header>
+        <main data-row="Contact-main">
+            <div class="have-a-question">
+                <div class="col col-1">
+                    <h1>Have a question?</h1>
+                    <p>Contact us whenever you have 
+                        any question.We are always 
+                        here for you!
+                    </p>
+                </div>
+                <div class="col col-2">
+                    <div class="email">
+                        <h1>Email</h1>
+                        <p>Skilltech@conact.com</p>
+                    </div>
+                    <div class="phone">
+                        <h1>Phone</h1>
+                        <p>+212 0661543287</p>
+                    </div>
+                    <div class="adress">
+                        <h1>Adress</h1>
+                        <p>Morocco, Casablanca, Mohammedia, W3CK 2LS</p>
+                    </div>
+                </div>
+                <div class="col col-3">
+                    <form id="colored-lines-form">
+                        <div>
+                            <div class="colored-line" onclick="changeColor(1)">
+                                <input type="text" name="line1" onkeydown="handleEnter(event, 2)">
+                            </div>
+                            <div class="colored-line" onclick="changeColor(2)">
+                                <input type="text" name="line2"  onkeydown="handleEnter(event, 3)">
+                            </div>
+                            <div class="colored-line" onclick="changeColor(3)">
+                                <input type="text" name="line3"  onkeydown="handleEnter(event, 4)">
+                            </div>
+                            <div class="colored-line" onclick="changeColor(4)">
+                                <input type="text" name="line4"  onkeydown="handleEnter(event, 5)">
+                            </div>
+                            <div class="colored-line" onclick="changeColor(5)">
+                                <input type="text" name="line5"  onkeydown="handleEnter(event, 6)">
+                            </div>
+                        </div>
+                        <button class="btn" type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="social-media">
+                <h1>social Media</h1>
+                <i class="fa-brands fa-facebook"><a href="https://web.facebook.com/apdsamad.amaitit"></a></i>
+                <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/bdlsmdmytyt/"></a></i>
+                <i class="fa-brands fa-x-twitter"><a href="https://twitter.com/amaitit28716"></a></i>
+            </div>
+            <div class="site-menu">
+                <h1>Site Menu</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="About.html">About US</a></li>
+                    <li><a href="Contact.html">Contact US</a></li>
+                </ul>
+            </div>
+            <div class="Skilltech2">
+                <h1>Skilltech</h1>
+                <p>Gain your skills with us</p>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+
+</html>

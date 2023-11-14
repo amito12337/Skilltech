@@ -38,3 +38,22 @@ onscroll = () => {
 
 
 // About Header Of Home Page
+// About Main Of Contact Page 
+function changeColor(lineNumber) {
+    var lines = document.getElementsByClassName("colored-line");
+    var line = lines[lineNumber - 1];
+    // You can add additional logic here to change the color to something other than white
+    line.style.backgroundColor = line.style.backgroundColor === "red" ? "" : "red";
+}
+
+function handleEnter(event, nextLineNumber) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Prevents the default behavior of the Enter key in a text input
+        var nextLineInput = document.getElementsByName("line" + nextLineNumber)[0];
+        if (nextLineInput) {
+        nextLineInput.focus();
+        }
+    }
+}
+// About Main Of Contact Page 
+
