@@ -4,20 +4,22 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'md': {'min': '0px', 'max': '780px'},
-        // => @media (min-width: 401px and max-width: 799px) { ... }
-        'lg': {'min': '780px'},
-        // => @media (min-width: 780px ) { ... }
+        sm: { min: "0px", max: "600px" },
+        // => @media (max-width: 600px ) { ... }
+        md: { min: "600px", max: "900px" },
+        // => @media (min-width: 600px and max-width: 900px) { ... }
+        lg: { min: "900px" },
+        // => @media (min-width: 980px ) { ... }
       },
-      colors:{
-        primary:'#ff3333',
+      colors: {
+        primary: "#ff3333",
         secondary: {
-          100 : "#9dc3ff",
-          200 : "#5b9aff"
-        }
-      }
+          100: "#9dc3ff",
+          200: "#5b9aff",
+        },
+      },
     },
   },
   plugins: [],
-}
+};
 

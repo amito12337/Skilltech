@@ -5,6 +5,7 @@ let main = document.querySelector('main')
 let btnsHeader = document.querySelector('.btns-login-and-sign')
 let body = document.querySelector('body')
 let header = document.querySelector('header')
+let footer = document.querySelector("footer");
 
 function showMenu(){
     if (dropMenu.classList.contains("hidden")) {
@@ -14,6 +15,7 @@ function showMenu(){
         menuBarIcon.style.position = "absolute";
         menuBarIcon.style.right = "0";
         main.style.display = 'none'
+        footer.style.display = 'none'
         body.style.height = '100vh'
         console.log("Menu is hidden, showing it now.")
     } else {
@@ -22,6 +24,7 @@ function showMenu(){
         menuBarIcon.classList.remove("fa-xmark");
         menuBarIcon.classList.add("fa-bars");
         main.style.display = 'block'
+        footer.style.display = 'grid';
         body.style.height = '100%'
     }
 }

@@ -13,6 +13,12 @@ body {
   @apply h-full w-full ;
   background: var(--main-color);
 }
+.btn {
+  @apply cursor-pointer border-primary border-2 rounded-md font-semibold hover:text-primary  bg-primary hover:bg-opacity-0 text-white transition ease-linear duration-500;
+}
+img {
+  @apply lg:w-[100%]
+}
 /* About Header Of Pages*/
 
 header {
@@ -28,19 +34,33 @@ header {
   left: 10%;
   right: 10%;
 }
+header h1 {
+  @apply text-white text-8xl;
+}
+header h1 span {
+  @apply text-red-600 font-bold;
+}
+
+.bef-nav {
+  @apply flex justify-around items-center;
+}
+.nav {
+  @apply flex list-none gap-9;
+}
 .item-nav {
   border-radius: 30px;
-  @apply text-blue-100 text-2xl font-semibold  hover:text-red-600 mx-7 transition  duration-700 ease-in hover:font-bold;
+  @apply text-blue-100 text-2xl font-semibold  hover:text-red-600 mx-7 transition  duration-700 ease-in hover:font-bold md:hidden sm:hidden ;
 }
 .menu-bar {
   @apply lg:hidden  cursor-pointer transition duration-1000 ease-linear  hover:text-red-500;
 }
 .dropdown-menu {
-  @apply lg:hidden absolute text-center;
-  margin-top: 620px;
-  width: 100%;
+  @apply lg:hidden absolute text-center mb-6 w-full mt-[620px] md:mt-[800px] sm:mt-[800px];
 }
 
+.icon-menu {
+  @apply lg:hidden md:block sm:block ;
+}
 .nav-dropped {
   @apply overflow-hidden  hover:font-bold text-center right-0  list-none;
   background-image: linear-gradient(
@@ -52,12 +72,13 @@ header {
   border-radius: 10px;
   width: 80%;
   margin: 0 10%;
-  padding: 0 25.5%;
+  /*should you do this margin in phones = margin: 200px 0 0 10% */ 
+  padding: 0 25.5%; 
   height: 520px;
 }
 .item-nav-dropped {
-  @apply text-white   font-semibold my-16 py-9  text-4xl hover:text-red-600 hover:font-bold transition  duration-700 ease-in;
-  width: 100px;
+  @apply text-white font-semibold my-16 py-9  text-4xl hover:text-red-600 hover:font-bold transition  duration-700 ease-in;
+  width: 100%;
 }
 footer {
   height: 325px;
@@ -74,42 +95,52 @@ footer {
 
 .img1 img {
   opacity: 0.5;
+  height: 580px;
+  object-fit: cover;
 }
-.img1 h1,
-p {
-  margin-left: 230px;
-  cursor: pointer;
+.img1 .informations {
+  @apply  absolute h-[50%] w-[90%] top-[10%] lg:top-[25%] left-[5%];
 }
-.img1 h1 {
-  @apply absolute top-60  text-8xl text-white  font-bold;
+.img1 .informations h1 {
+  @apply absolute top-0 text-7xl text-white font-bold;
   font-family: var(--bodyFont);
 }
-.img1 p {
-  @apply absolute text-white text-4xl;
-  bottom: 90px;
-  height: 170px;
-  line-height: 28px;
-  margin-right: 202px;
+.img1 .informations p {
+  @apply text-white text-4xl mt-[80px] sm:mt-[103px];
+  width: 86%;
+  line-height: 30px;
 }
-.btn {
-  @apply cursor-pointer border-primary border-2 rounded-md font-semibold hover:text-primary  bg-primary hover:bg-opacity-0 text-white transition ease-linear duration-500;
+.img1 .informations .btn {
+  @apply py-4 px-6 mt-7 md:mt-16 ml-[45%] sm:ml-[32%] cursor-pointer border-primary border-2 rounded-md font-semibold hover:text-primary  bg-primary hover:bg-opacity-0 text-white transition ease-linear duration-500;
+  
+}
+.img1 .informations .btn a {
+  @apply text-2xl;
 }
 
+.before-services {
+  background: var(--main-color);
+}
 .services-at-home {
+  width: 80%;
   margin-left: 10%;
-  margin-right: 10%;
 }
 .services-at-home .h1 {
   @apply text-center  font-bold pt-6 mb-4 text-8xl text-white;
   font-family: var(--bodyFont);
 }
 .services-at-home .p {
-  @apply text-3xl text-white pl-20 pt-10 pb-20 font-semibold;
+  @apply text-3xl text-white pl-20 pt-10 pb-20 font-semibold text-center;
+}
+.services-at-home .services {
+ @apply grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12;
 }
 .services-at-home .btn {
-  @apply text-2xl relative py-5 px-4;
+  @apply text-2xl relative py-5 px-4 left-[45%] sm:left-[40%] md:left-[40%];
   margin: 30px 0;
-  left: 45%;
+}
+.services-at-home .services .data-backub {
+  @apply md:ml-[50%] w-[100%];
 }
 .services-at-home .services .service .title-and-desc h1 {
   @apply text-center text-5xl font-bold text-white my-5;
@@ -134,9 +165,11 @@ p {
   line-height: 50px;
 }
 .simply-better .btn {
-  @apply text-2xl py-5 px-4 mt-9 mb-20;
+  @apply text-2xl py-5 px-4 mt-9 mb-20 ml-[45%] sm:ml-[40%] md:ml-[40%];
 }
-
+.simply-better .btn a {
+  @apply text-2xl;
+}
 .imgs-home-footer {
   @apply flex justify-evenly overflow-hidden pt-16 pb-20;
   background: var(--main-color);
@@ -144,6 +177,7 @@ p {
 .imgs-home-footer img {
   width: 45%;
 }
+
 .saying {
   background: var(--secondary-color);
 }
@@ -162,18 +196,18 @@ p {
 
 /*About Main Of Home Page */
 footer {
-  @apply grid grid-cols-3;
+  @apply grid grid-cols-3 md:grid-cols-1 sm:grid-cols-1;
   background: var(--color-bg-linear);
 }
 
 footer .social-media {
-  @apply  m-12 text-center;
+  @apply sm:m-3 m-12 text-center;
 }
 footer .social-media h1 {
   @apply text-5xl font-bold text-primary mb-10;
 }
 footer .social-media i {
-  @apply text-6xl mx-5;
+  @apply text-6xl  my-4 mx-5;
   color: #b3bccb; 
 }
 footer .social-media i:hover,footer .site-menu ul li a:hover{
@@ -182,7 +216,7 @@ footer .social-media i:hover,footer .site-menu ul li a:hover{
 }
 
 footer .site-menu {
-  @apply  m-12;
+  @apply sm:m-3  m-12;
 }
 footer .site-menu h1 {
   @apply font-bold text-primary text-5xl text-center;
@@ -191,20 +225,21 @@ footer .site-menu ul {
   @apply text-center mt-10;
 }
 footer .site-menu ul li {
-  @apply mb-10;
+  @apply mb-10 p-0 w-[100%];
 }
 footer .site-menu ul li a {
   @apply text-3xl  text-white font-semibold;
 }
 
 footer .Skilltech2 {
-  @apply  m-12;
+  @apply  mx-12 mt-2 ;
 }
 footer .Skilltech2 h1 {
   @apply text-5xl text-center text-primary font-bold;
 }
 footer .Skilltech2 p {
-  @apply text-4xl  text-center m-0 font-semibold text-white mt-10;
+  @apply text-3xl  text-center m-0 font-semibold text-white my-10;
+  line-height: 3.5rem;
 }
 /*About Footer Of Pages */
 /*About Footer Of Pages */
