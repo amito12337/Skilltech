@@ -29,10 +29,8 @@ header {
   background-image:var(--color-bg-linear);
 }
 [data-row="middle"] {
-  @apply flex items-center justify-between relative;
-  width: 80%;
-  left: 10%;
-  right: 10%;
+  @apply flex items-center justify-between sm:w-[80%] md:w-[80%] lg:w-[80%] relative left-[10%] xs:left-0 right-[10%];
+
 }
 header h1 {
   @apply text-white text-8xl;
@@ -49,69 +47,59 @@ header h1 span {
 }
 .item-nav {
   border-radius: 30px;
-  @apply text-blue-100 text-2xl font-semibold  hover:text-red-600 mx-7 transition  duration-700 ease-in hover:font-bold md:hidden sm:hidden ;
+  @apply text-blue-100 text-2xl font-semibold  hover:text-red-600 mx-7 transition  duration-700 ease-in hover:font-bold md:hidden sm:hidden xs:hidden;
 }
 .menu-bar {
   @apply lg:hidden  cursor-pointer transition duration-1000 ease-linear  hover:text-red-500;
 }
 .dropdown-menu {
-  @apply lg:hidden absolute text-center mb-6 w-full mt-[620px] md:mt-[800px] sm:mt-[800px];
+  @apply lg:hidden absolute text-center mb-6 w-full mt-[620px] md:mt-[730px] sm:mt-[730px] xs:mt-[666px];
 }
 
 .icon-menu {
-  @apply lg:hidden md:block sm:block ;
+  @apply lg:hidden md:block sm:block xs:block ;
 }
 .nav-dropped {
-  @apply overflow-hidden  hover:font-bold text-center right-0  list-none;
+  @apply overflow-hidden sm:w-[80%] md:w-[80%] lg:w-[80%]  hover:font-bold text-center list-none mx-[10%] xs:mx-[20%];
   background-image: linear-gradient(
     320deg,
     rgb(0, 0, 255, 0.2),
     rgb(57, 57, 147, 0.2),
     rgb(22, 22, 91, 0.2)
   );
-  border-radius: 10px;
-  width: 80%;
-  margin: 0 10%;
-  /*should you do this margin in phones = margin: 200px 0 0 10% */ 
-  padding: 0 25.5%; 
   height: 520px;
 }
 .item-nav-dropped {
   @apply text-white font-semibold my-16 py-9  text-4xl hover:text-red-600 hover:font-bold transition  duration-700 ease-in;
   width: 100%;
 }
-footer {
-  height: 325px;
-  padding: 50px;
-  position: relative;
-  bottom: -164px;
-}
 /*About Header Of Pages*/
+
 /*About Main Of Home Page */
 [data-row="main-middle"] {
-  position: relative;
-  top: 130px;
+  width: 100%;
+  margin-top: 130px;
 }
 
 .img1 img {
+  @apply h-[580px] xs:h-[690px];
   opacity: 0.5;
-  height: 580px;
   object-fit: cover;
 }
 .img1 .informations {
-  @apply  absolute h-[50%] w-[90%] top-[10%] lg:top-[25%] left-[5%];
+  @apply  absolute h-[50%] w-[90%] top-[10%] lg:top-[25%] left-[5%] xs:top-[0%];
 }
 .img1 .informations h1 {
-  @apply absolute top-0 text-7xl text-white font-bold;
+  @apply absolute top-0 sm:top-[-40px] text-7xl xs:text-[3.5rem] text-white font-bold;
   font-family: var(--bodyFont);
 }
 .img1 .informations p {
-  @apply text-white text-4xl mt-[80px] sm:mt-[103px];
+  @apply text-white text-4xl mt-[80px] sm:mt-[40px];
   width: 86%;
   line-height: 30px;
 }
 .img1 .informations .btn {
-  @apply py-4 px-6 mt-7 md:mt-16 ml-[45%] sm:ml-[32%] cursor-pointer border-primary border-2 rounded-md font-semibold hover:text-primary  bg-primary hover:bg-opacity-0 text-white transition ease-linear duration-500;
+  @apply py-4 px-6 mt-7 md:mt-16 ml-[45%] sm:ml-[32%] xs:ml-[30%] cursor-pointer border-primary border-2 rounded-md font-semibold hover:text-primary  bg-primary hover:bg-opacity-0 text-white transition ease-linear duration-500;
   
 }
 .img1 .informations .btn a {
@@ -130,26 +118,25 @@ footer {
   font-family: var(--bodyFont);
 }
 .services-at-home .p {
-  @apply text-3xl text-white pl-20 pt-10 pb-20 font-semibold text-center;
+  @apply text-3xl text-white pl-20 xs:pl-0 sm:pl-0 pt-10 pb-20 font-semibold text-center;
 }
 .services-at-home .services {
- @apply grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12;
+ @apply grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-12;
 }
 .services-at-home .btn {
-  @apply text-2xl relative py-5 px-4 left-[45%] sm:left-[40%] md:left-[40%];
+  @apply text-2xl relative py-5 px-4 left-[45%] sm:left-[33%] md:left-[40%] xs:left-[30%];
   margin: 30px 0;
 }
 .services-at-home .services .data-backub {
   @apply md:ml-[50%] w-[100%];
 }
 .services-at-home .services .service .title-and-desc h1 {
-  @apply text-center text-5xl font-bold text-white my-5;
+  @apply lg:text-center xs:text-[2rem] xs:text-center md:text-center text-5xl font-bold text-white my-5;
   line-height: 26px;
   font-family: var(--bodyFont);
 }
 .services-at-home .services .service .title-and-desc p {
-  @apply text-center m-0 my-5 text-3xl pt-10 text-white;
-  line-height: 30px;
+  @apply text-center m-0 my-5 xs:my-1 text-3xl xs:text-xl leading-[30px] xs:leading-[20px] font-medium pt-10 xs:pt-0 text-white;
 }
 
 .simply-better {
@@ -165,7 +152,7 @@ footer {
   line-height: 50px;
 }
 .simply-better .btn {
-  @apply text-2xl py-5 px-4 mt-9 mb-20 ml-[45%] sm:ml-[40%] md:ml-[40%];
+  @apply text-2xl py-5 px-4 mt-9 mb-20 ml-[45%] sm:ml-[33%] md:ml-[40%] xs:ml-[30%];
 }
 .simply-better .btn a {
   @apply text-2xl;
@@ -195,8 +182,12 @@ footer {
 }
 
 /*About Main Of Home Page */
+
+/*About Footer Of Pages */
 footer {
-  @apply grid grid-cols-3 md:grid-cols-1 sm:grid-cols-1;
+  @apply grid grid-cols-3 md:grid-cols-1 h-[328px] sm:h-[563px] md:h-[613px] xs:h-[802px] xs:grid-cols-1 sm:grid-cols-1 relative;
+  padding: 50px;
+  bottom: -164px;
   background: var(--color-bg-linear);
 }
 
@@ -207,7 +198,7 @@ footer .social-media h1 {
   @apply text-5xl font-bold text-primary mb-10;
 }
 footer .social-media i {
-  @apply text-6xl  my-4 mx-5;
+  @apply text-6xl  my-4 mx-5 xs:mx-9;
   color: #b3bccb; 
 }
 footer .social-media i:hover,footer .site-menu ul li a:hover{
@@ -232,7 +223,7 @@ footer .site-menu ul li a {
 }
 
 footer .Skilltech2 {
-  @apply  mx-12 mt-2 ;
+  @apply  mx-12 mt-12 ;
 }
 footer .Skilltech2 h1 {
   @apply text-5xl text-center text-primary font-bold;
@@ -242,8 +233,6 @@ footer .Skilltech2 p {
   line-height: 3.5rem;
 }
 /*About Footer Of Pages */
-/*About Footer Of Pages */
-
 
 /* About Main Of About Page */
 .the-p {
@@ -299,11 +288,6 @@ width: 50%;
 margin-left: 25%;
 }
 
-
-.section4 div p {
-width: 50%;
-margin-left: 25%;
-}
 .section4 #imgs {
 width: 90%;
 margin-left: 5%;
@@ -311,45 +295,38 @@ margin-left: 5%;
 /* About Main Of About Page */
 
 /* About Main Of Services Page */
-.Services .main-container {
+.Services .bef-section1 {
+  @apply  grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1;
   width: 80%;
- padding-left: 10%
+  margin-left: 10%;
 }
-.Services .main-container .div {
-  @apply  flex justify-between items-center;
-  width: 100%;
-  height: 490px;
-}
-.Services .main-container .div .Section1-at-Services {
-  @apply m-7;
-  width: 50%;
-}
-.Services .main-container .div .Section1-at-Services .first {
+.Services .bef-section1 .Section1-at-Services .first {
   @apply text-white text-7xl font-bold;
   font-family: var(--bodyFont);
 }
-.Services .main-container .div .Section1-at-Services hr {
+.Services .bef-section1 .Section1-at-Services hr {
   @apply bg-primary border-none;
   width: 109px;
   height: 1.75px;
   margin: 18px 0;
 }
-.Services .main-container .div .Section1-at-Services div {
-  @apply my-6;
+.Services .bef-section1 .Section1-at-Services .bef-btn {
+  @apply w-[100%] my-6;
 }
-.Services .main-container .div .Section1-at-Services div h1 {
+.Services .bef-section1 .Section1-at-Services div h1 {
     @apply text-white text-4xl my-4 font-bold;
 }
-.Services .main-container .div .Section1-at-Services div p {
+.Services .bef-section1 .Section1-at-Services div p {
   @apply m-0 text-white font-medium text-2xl;
   line-height: 20px;
 }
-.Services .main-container .div .Section1-at-Services div .btn {
-  @apply py-4 px-7 mt-9;
-  margin-left: 25%;
+.Services .bef-section1 .Section1-at-Services .bef-btn .btn {
+  @apply py-4 px-7 mt-9 ml-[40%] md:ml-[45%] sm:ml-[37%] xs:ml-[30%];
 }
-.Services .main-container .div div img {
-  width: 650px;
+.Services .bef-section1 div img {
+  width: 100%;
+  margin-bottom: 100px;
+  object-fit: cover;
 }
 .Services .price-list {
   padding: 0 10%;
@@ -360,13 +337,13 @@ margin-left: 5%;
   font-family: var(--body-font);
 }
 .Services .price-list .head h1 {
-  @apply text-white text-center font-semibold text-8xl my-4;
+  @apply text-white text-center font-semibold text-8xl mt-4 mb-12;
 }
 .Services .price-list .price-table {
-  @apply flex justify-between  gap-9;
+  @apply grid grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 justify-between gap-9;
 }
 .Services .price-list .price-table .column .header {
-  @apply px-4 py-3 flex justify-between items-center;
+  @apply px-4 py-3 flex justify-between items-center h-[45px] md:h-[55px] xs:h-[55px];
 }
 .Services .price-list .price-table .column .header h1{
   @apply text-4xl text-white font-semibold;
@@ -376,25 +353,8 @@ margin-left: 5%;
   @apply text-2xl text-white font-medium m-0;
 }
 .Services .price-list .price-table .column .Service-desc {
-  @apply m-0 text-white text-3xl font-semibold pt-3 pb-40 px-4;
-  line-height: 34px;
-}
-.Services .price-list .price-table .column .Service-desc1 {
-  @apply m-0 text-white text-3xl font-semibold pt-7 pb-9 px-4;
-  line-height: 38px;
-}
-.Services .price-list .price-table .column .Service-desc2 {
-  @apply m-0 text-white text-3xl font-semibold  px-4; 
-  line-height: 30px;
-}
-.Services .price-list .price-table .column .Service-desc3 {
-  @apply m-0 text-white text-3xl font-semibold px-4;
-  padding-bottom: 10.5px;
-  line-height: 40px;
-}
-.Services .price-list .price-table .column .Service-desc4 {
-  @apply m-0 text-white text-3xl font-semibold  px-4; 
-  line-height: 30px;
+  @apply m-0 text-white text-3xl font-semibold px-4 h-[150px] md:h-[180px] sm:h-[120px] sm:pt-6 md:pt-6 lg:pt-3;
+  line-height: 23px;
 }
 .Services .price-list .price-table .column hr {
   @apply bg-primary border-none;
@@ -403,15 +363,15 @@ margin-left: 5%;
   margin: 9px 0;
 }
 
-.Section2-at-services img {
+.Section2-at-services .bef-inside-section {
   @apply relative;
-  height: 393px;
+}
+.Section2-at-services img {
+  @apply relative h-[400px] sm:h-[790px] xs:h-[950px] md:h-[500px] object-cover;
 }
 .Section2-at-services .inside-section2 {
-  @apply absolute;
-  background: var(--thirdary-color);
-  bottom: 21%;
-  left: 10%;
+  @apply absolute h-[80%] bottom-[10%] left-[10%];
+  background: var(--secondary-color);
   width: 80%;
 }
 .Section2-at-services .inside-section2 .head h1 {
@@ -422,7 +382,7 @@ margin-left: 5%;
   @apply text-white text-2xl font-medium text-center m-0 py-2 px-4;
 }
 .Section2-at-services .inside-section2 .main {
-  @apply grid grid-cols-4 gap-7;
+  @apply grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-7;
   width: 80%;
   margin: 30px 0px 0px 10%;
 }
@@ -440,53 +400,57 @@ margin-left: 5%;
     font-family: var(--body-font);
 }
 .Section2-at-services .inside-section2 button {
-  @apply p-4;
-  margin-top: 10px;
-  margin-left: 47%;
+  @apply p-4 ml-[47%] sm:ml-[41%] md:ml-[44%] xs:ml-[37%];
+  margin-top: 20px;
   margin-bottom: 5px;
 }
 
 .What-our-client-say {
   @apply mt-16 pb-16;
   background: var(--secondary-color);
-  
 }
 .What-our-client-say .main {
-  width: 80%;
-  margin-left: 10%;
+  @apply ml-[5%] xs:ml-0;
+  width: 90%;
 }
 .What-our-client-say .main .h1 {
   @apply text-white text-7xl font-bold pt-20 pb-16;
   font-family: var(--body-font);
 }
-.What-our-client-say .main  .feedlbacks {
-  @apply grid grid-cols-2 gap-12;
+.What-our-client-say .main .feedlbacks {
+  @apply flex items-center justify-between;
 }
-.What-our-client-say .main  .feedlbacks div hr {
+.What-our-client-say .main .feedlbacks .inside-feedlbacks  {
+  @apply grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-14;
+}
+.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback hr {
   @apply bg-primary border-none mb-2;
   width: 40px;
   height: 1.75px;
 }
-.What-our-client-say .main  .feedlbacks div .feedlback{
+.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback {
+  @apply my-5;
+}
+.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .feedlback{
   @apply m-0 text-white text-2xl font-medium mb-8;
-  width: 400px;
   line-height: 25px;
 }
-.What-our-client-say .main  .feedlbacks div .informations {
+.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .informations {
   @apply flex items-center;
   width: 250px;
 }
-.What-our-client-say .main  .feedlbacks div .informations img {
+.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .informations img {
   @apply rounded-full;
   width: 68px;
 }
-.What-our-client-say .main  .feedlbacks div .informations .identifications h1 {
+.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .informations .identifications h1 {
   @apply text-4xl text-white font-semibold ml-9;
 }
-.What-our-client-say .main  .feedlbacks div .informations .identifications p {
+.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .informations .identifications p {
   @apply text-xl text-white font-medium ml-9;
 }
 /* About Main Of Services Page */
+
 /*About Main Of Contact Page */
 [data-row="Contact-main"] {
   margin-top: 130px;
@@ -557,5 +521,4 @@ margin-left: 5%;
 .have-a-question .col-3 #colored-lines-form .colored-line input:hover, input:focus {
   color: white;
 }
-
 /*About Main Of Contact Page */

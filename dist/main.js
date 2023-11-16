@@ -39,8 +39,42 @@ onscroll = () => {
 
 }
 
-
 // About Header Of Home Page
+// About Main Of Services Page 
+document.addEventListener("DOMContentLoaded", function () {
+  let currentFeedbackIndex = 1; // Track the current feedback index
+
+  // Function to show the feedback based on the index
+  function showFeedback(index) {
+    // Hide all feedbacks
+    document.querySelectorAll(".bef-feedlback").forEach((feedback) => {
+      feedback.classList.add("hidden");
+    });
+
+    // Show the feedback based on the index
+    document.getElementById(`feedlback${index}`).classList.remove("hidden");
+  }
+
+  // Show the initial feedback
+  showFeedback(currentFeedbackIndex);
+
+  // Event listener for the left chevron
+  document
+    .querySelector(".fa-chevron-left")
+    .addEventListener("click", function () {
+      currentFeedbackIndex = (currentFeedbackIndex - 1 + 3) % 3 || 3; // Cycle through 1, 2, 3
+      showFeedback(currentFeedbackIndex);
+    });
+
+  // Event listener for the right chevron
+  document
+    .querySelector(".fa-chevron-right")
+    .addEventListener("click", function () {
+      currentFeedbackIndex = (currentFeedbackIndex + 1) % 3 || 3; // Cycle through 1, 2, 3
+      showFeedback(currentFeedbackIndex);
+    });
+});
+// About Main Of Services Page 
 // About Main Of Contact Page 
 function changeColor(lineNumber) {
     var lines = document.getElementsByClassName("colored-line");

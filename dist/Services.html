@@ -37,30 +37,28 @@
             </div>      
         </header>
         <main data-row="main-middle" class="Services">
-            <div class="main-container">
-                <div class="div">
-                    <div class="Section1-at-Services">
-                        <h1 class="first">Services</h1>
-                        <hr>
-                        <div>
-                            <h1>Network Security</h1>
-                            <p>Our network security service provides robust protection to safeguard your website from malicious threats.</p>
-                        </div>
-                        <div>
-                            <h1>Business Software and Hardware Installation</h1>
-                            <p>Our computer consulting agency provides professional software and hardware installation services to ensure smooth website operations.</p>
-                        </div>
-                        <div>
-                            <h1>Data Backup and Recovery</h1>
-                            <p>Our data backup and recovery service ensures your website is secure and can be recovered in case of a disaster.</p>
-                        </div>
-                        <div>
-                            <button class="btn">VIEW MORE</button>
-                        </div>
+            <div class="bef-section1">
+                <div class="Section1-at-Services">
+                    <h1 class="first">Services</h1>
+                    <hr>
+                    <div>
+                        <h1>Network Security</h1>
+                        <p>Our network security service provides robust protection to safeguard your website from malicious threats.</p>
                     </div>
                     <div>
-                        <img src="imgs/Network-security.jpg">
+                        <h1>Business Software and Hardware Installation</h1>
+                        <p>Our computer consulting agency provides professional software and hardware installation services to ensure smooth website operations.</p>
                     </div>
+                    <div>
+                        <h1>Data Backup and Recovery</h1>
+                        <p>Our data backup and recovery service ensures your website is secure and can be recovered in case of a disaster.</p>
+                    </div>
+                    <div class="bef-btn">
+                        <button class="btn">VIEW MORE</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="imgs/Network-security.jpg">
                 </div>
             </div>
             <div class="price-list">
@@ -74,7 +72,7 @@
                                 <h1>Network Security</h1>
                                 <p class="price">$100</p>
                             </div>
-                            <p class="Service-desc1">Our network security service provides 
+                            <p class="Service-desc">Our network security service provides 
                                 robust protection to safeguard your 
                                 website from mallicious threats.
                             </p>
@@ -83,7 +81,7 @@
                                 <h1>Data Backub and Recovery</h1>
                                 <p class="price">$100</p>
                             </div>
-                            <p class="Service-desc3">Our comprehensive backup and recovery 
+                            <p class="Service-desc">Our comprehensive backup and recovery 
                                 service protects against data loss 
                                 and provides quick recovery in an 
                                 emergency.
@@ -101,13 +99,14 @@
                                 your computer consulting 
                                 agency.
                             </p>
+                            <hr class="hidden sm:block">
                         </div>
                         <div class="column col-2">
-                            <div class="header">
+                            <div class="header xs:h-[60px]">
                                 <h1>Business Software and Hardware Installation</h1>
                                 <p class="price">$100</p>
                             </div>
-                            <p  class="Service-desc2">We ensure reliable website setup with 
+                            <p  class="Service-desc">We ensure reliable website setup with 
                                 comprehensive software and hardware 
                                 installation services tailored to 
                                 meet your requirements.
@@ -117,7 +116,7 @@
                                 <h1>Network Insfracture Setup</h1>
                                 <p class="price">$100</p>
                             </div>
-                            <p class="Service-desc4">Our network infrastructure setup service 
+                            <p class="Service-desc">Our network infrastructure setup service 
                                 ensures your computer consulting agency 
                                 is up and running with an optimized, 
                                 secure connection infrastructure.
@@ -135,8 +134,9 @@
                     </div>
             </div>
             <div class="Section2-at-services">
-                <img src="imgs/Services/img2.jpg">
-                <div class="inside-section2">
+                <div class="bef-inside-section">
+                    <img src="imgs/Services/img2.jpg">
+                    <div class="inside-section2">
                     <div class="head">
                         <h1>Our results</h1>
                         <p>We’re proud of what we’ve achieved, but we’re not stopping there.</p>
@@ -162,38 +162,57 @@
                     <button class="btn">EXPLORE</button>
                 </div>
             </div>
+            </div>
             <div class="What-our-client-say">
                 <div class="main">
                     <h1 class="h1">What Our Client Say</h1>
                     <div class="feedlbacks">
-                        <div>
-                            <hr>
-                            <p class="feedlback">Their service surpassed all my
-                                expectations - I would definitely 
-                                recommend their services!
-                            </p>
-                            <div class="informations">
-                                <img src="imgs/Services/img1-person-.jpg">
-                                <div class="identifications">
-                                    <h1>David Smith</h1>
-                                    <p>Blogger</p>
+                        <i class="fa-solid fa-chevron-left text-7xl mr-3" style="color: #fb3737;"></i>
+                        <div class="inside-feedlbacks">
+                            <div class="bef-feedlback" id="feedlback1">
+                                <hr>
+                                <p class="feedlback">Their service surpassed all my
+                                    expectations - I would definitely 
+                                    recommend their services!
+                                </p>
+                                <div class="informations">
+                                    <img src="imgs/Services/img1-person-.jpg">
+                                    <div class="identifications">
+                                        <h1>David Smith</h1>
+                                        <p>Blogger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bef-feedlback lg:block hidden" id="feedlback2">
+                                <hr>
+                                <p class="feedlback">Their service surpassed all my
+                                    expectations - I would definitely 
+                                    recommend their services!
+                                </p>
+                                <div class="informations">
+                                    <img src="imgs/Services/img-person2-.jpg">
+                                    <div class="identifications">
+                                        <h1>Dina Maro</h1>
+                                        <p>HR Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bef-feedlback hidden" id="feedlback3">
+                                <hr>
+                                <p class="feedlback">Their service surpassed all my
+                                    expectations - I would definitely 
+                                    recommend their services!
+                                </p>
+                                <div class="informations">
+                                    <img src="imgs/Services/img-person1.jpg">
+                                    <div class="identifications">
+                                        <h1>William Brown</h1>
+                                        <p>English teacher</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <hr>
-                            <p class="feedlback">Their service surpassed all my
-                                expectations - I would definitely 
-                                recommend their services!
-                            </p>
-                            <div class="informations">
-                                <img src="imgs/Services/img-person2-.jpg">
-                                <div class="identifications">
-                                    <h1>Dina Maro</h1>
-                                    <p>HR Manager</p>
-                                </div>
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-chevron-right text-7xl" style="color: #fb3737;"></i>
                     </div>
                 </div>
             </div>
