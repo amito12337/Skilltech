@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       screens: {
         xs: { min: "0px", max: "300px" },
+        // => @media (min-width: 0px and max-width: 300px) { ... }
         sm: { min: "300px", max: "600px" },
         // => @media (min-width: 300px and max-width: 600px) { ... }
         md: { min: "600px", max: "800px" },

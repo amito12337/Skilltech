@@ -183,115 +183,88 @@ header h1 span {
 
 /*About Main Of Home Page */
 
-/*About Footer Of Pages */
-footer {
-  @apply grid grid-cols-3 md:grid-cols-1 h-[328px] sm:h-[563px] md:h-[613px] xs:h-[802px] xs:grid-cols-1 sm:grid-cols-1 relative;
-  padding: 50px;
-  bottom: -164px;
-  background: var(--color-bg-linear);
-}
-
-footer .social-media {
-  @apply sm:m-3 m-12 text-center;
-}
-footer .social-media h1 {
-  @apply text-5xl font-bold text-primary mb-10;
-}
-footer .social-media i {
-  @apply text-6xl  my-4 mx-5 xs:mx-9;
-  color: #b3bccb; 
-}
-footer .social-media i:hover,footer .site-menu ul li a:hover{
- color: rgba(221, 120, 120, 0.773);
- transition: 0.8s linear;
-}
-
-footer .site-menu {
-  @apply sm:m-3  m-12;
-}
-footer .site-menu h1 {
-  @apply font-bold text-primary text-5xl text-center;
-}
-footer .site-menu ul {
-  @apply text-center mt-10;
-}
-footer .site-menu ul li {
-  @apply mb-10 p-0 w-[100%];
-}
-footer .site-menu ul li a {
-  @apply text-3xl  text-white font-semibold;
-}
-
-footer .Skilltech2 {
-  @apply  mx-12 mt-12 ;
-}
-footer .Skilltech2 h1 {
-  @apply text-5xl text-center text-primary font-bold;
-}
-footer .Skilltech2 p {
-  @apply text-3xl  text-center m-0 font-semibold text-white my-10;
-  line-height: 3.5rem;
-}
-/*About Footer Of Pages */
-
 /* About Main Of About Page */
-.the-p {
-font-family: var(--bodyFont);
-line-height: 57px;
+.section1-at-about {
+  background: var(--secondary-color);
 }
-.the-s-p {
-line-height: 24px;
-font-family: var(--bodyFont);
+.section1-at-about .inside-section-1 {
+  @apply grid grid-cols-1 lg:grid-cols-2;
 }
-.hoha {
-background: var(--secondary-color);
+.section1-at-about .inside-section-1 .col-1 {
+  @apply p-5;
 }
-.haho {
-background: var(--secondary-color);
+.section1-at-about .inside-section-1 .col-2 {
+  @apply p-5;
 }
-.haho .hihi{
-width: 80%;
-margin-left: 10%;
+.section1-at-about .inside-section-1 .col-1 h1 {
+  @apply text-primary text-5xl m-2;
 }
-.haho .hihi div {
-margin-bottom: 19px;
+.section1-at-about .inside-section-1 .col-1 p {
+  @apply text-7xl m-0 my-8 xs:my-4 xs:leading-[40px] sm:leading-[40px] md:leading-[46px] font-bold text-white leading-[57px];
+  font-family: var(--bodyFont);
 }
-.haho .hihi div h1 {
-  @apply text-6xl text-white py-3 text-center font-mono font-extrabold;
-}
-.haho .hihi div p {
-  @apply m-0 text-3xl text-center py-4 text-white font-semibold;
-}
-.haho .hihi div img {
-  width: 40%;
-  margin-left: 30%;
-}
-.haho .hihi .item6 img {
-  /* this is because the icon does not was beatiful */
-  margin-left: 34%;
-  /* this is because the icon does not was beatiful */
-}
-.section3 {
-background: var(--thirdary-color); 
-}
-.section3 h1 {
-font-family: var(--bodyFont);
-}
-.section4 {
-background:var(--thirdary-color);
-}
-.section4 div h1 {
-font-family: var(--bodyFont);
-}
-.section4 div p {
-width: 50%;
-margin-left: 25%;
+.section1-at-about .inside-section-1 .col-2 p {
+  @apply text-white text-3xl m-2 leading-[24px] md:leading-[30px] sm:leading-[23px];
+  font-family: var(--bodyFont);
 }
 
-.section4 #imgs {
-width: 90%;
-margin-left: 5%;
+.section-2-at-about {
+  @apply  my-12;
+  background: var(--secondary-color);
 }
+.section-2-at-about .head h1 {
+  @apply text-8xl text-white font-mono font-extrabold text-center;
+}
+.section-2-at-about .head p {
+  @apply text-3xl text-white font-semibold mt-7 mb-20 m-0 text-center;
+}
+.section-2-at-about .inside-it{
+  @apply  grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-4;
+  width: 80%;
+  margin-left: 10%;
+}
+.section-2-at-about .inside-it .item {
+  background: var(--thirdary-color);
+  margin-bottom: 19px;
+}
+.section-2-at-about .inside-it .item img {
+  @apply lg:w-[80%] lg:ml-[10%] ml-[20%] w-[60%];
+}
+.section-2-at-about .inside-it .item6 img {
+  @apply lg:w-[80%] lg:ml-[20%] ml-[26%] w-[60%];
+}
+.section-2-at-about .inside-it .item h1 {
+  @apply lg:text-6xl text-8xl text-white py-3 text-center font-mono font-extrabold;
+}
+.section-2-at-about .inside-it .item p {
+  @apply m-0 lg:text-3xl text-5xl text-center py-4 text-white font-semibold;
+}
+
+
+.section-3-at-contact {
+  background: var(--secondary-color); 
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section-3-at-contact h1 {
+  @apply text-white text-7xl text-center font-bold leading-[55px] py-24;
+font-family: var(--bodyFont);
+}
+
+.section-4-at-contact {
+  background:var(--secondary-color);
+}
+.section-4-at-contact .main h1 {
+  @apply text-8xl text-white font-bold text-center p-10 xs:text-7xl;
+  font-family: var(--bodyFont);
+}
+.section-4-at-contact .main p {
+  @apply w-[80%] ml-[10%] leading-[28px] m-0 mb-6 lg:text-center md:text-center text-white text-3xl font-semibold;
+}
+
+.section-4-at-contact #imgs {
+  @apply w-[80%] ml-[10%] grid grid-cols-6 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1;
+} 
 /* About Main Of About Page */
 
 /* About Main Of Services Page */
@@ -459,10 +432,10 @@ margin-left: 5%;
 }
 
 .have-a-question {
-  @apply grid grid-cols-3 gap-14
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-14 md:w-[100%] md:text-center sm:w-[100%] sm:text-center xs:w-[100%] xs:text-center;
 }
 .have-a-question .col {
-  @apply py-6 pl-3 ;
+  @apply py-6 pl-3 md:w-[80%] md:ml-[5%] sm:w-[80%] sm:ml-[5%] xs:w-[80%] xs:ml-[5%];
 }
 .have-a-question .col-1 h1 {
   @apply text-white text-7xl font-bold;
@@ -471,7 +444,6 @@ margin-left: 5%;
 .have-a-question .col-1 p {
   @apply text-white text-2xl pt-5 font-medium m-0;
   line-height: 20px;
-  width: 300px;
   font-family: var(--body-font);
 }
 .have-a-question .col-2 div {
@@ -488,13 +460,12 @@ margin-left: 5%;
 .have-a-question .col-3 #colored-lines-form {
   border: 0.1px solid white;
   height: 360px;
-  width: 250px;
+  width: 100%;
   position: relative;
   padding: 10px 0 10px 0;
 }
 .have-a-question .col-3 #colored-lines-form .btn {
-  @apply py-5 px-8 absolute bottom-6 ;
-  margin-left: 37%;
+  @apply py-5 px-8 lg:absolute lg:bottom-6 lg:ml-[37%];
 }
 .have-a-question .col-3 #colored-lines-form div {
   width: 80%;
@@ -522,3 +493,54 @@ margin-left: 5%;
   color: white;
 }
 /*About Main Of Contact Page */
+
+/*About Footer Of Pages */
+
+footer {
+  @apply grid grid-cols-1 mt-32 lg:grid-cols-3;
+  padding: 50px;
+  background: var(--color-bg-linear);
+}
+
+footer .social-media {
+  @apply sm:m-3 m-12 text-center;
+}
+footer .social-media h1 {
+  @apply text-5xl font-bold text-primary mb-10;
+}
+footer .social-media i {
+  @apply text-6xl  my-4 mx-5 xs:mx-9;
+  color: #b3bccb; 
+}
+footer .social-media i:hover,footer .site-menu ul li a:hover{
+ color: rgba(221, 120, 120, 0.773);
+ transition: 0.8s linear;
+}
+
+footer .site-menu {
+  @apply sm:m-3  m-12;
+}
+footer .site-menu h1 {
+  @apply font-bold text-primary text-5xl text-center;
+}
+footer .site-menu ul {
+  @apply text-center mt-10;
+}
+footer .site-menu ul li {
+  @apply mb-10 p-0 w-[100%];
+}
+footer .site-menu ul li a {
+  @apply text-3xl  text-white font-semibold;
+}
+
+footer .Skilltech2 {
+  @apply  mx-12 mt-12 ;
+}
+footer .Skilltech2 h1 {
+  @apply text-5xl text-center text-primary font-bold;
+}
+footer .Skilltech2 p {
+  @apply text-3xl  text-center m-0 font-semibold text-white my-10;
+  line-height: 3.5rem;
+}
+/*About Footer Of Pages */
