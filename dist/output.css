@@ -566,6 +566,11 @@ video {
   --tw-bg-opacity: 0;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
@@ -616,6 +621,30 @@ body {
   }
 }
 
+.to-top-btn {
+  background: red;
+  border-radius: 14px;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+}
+
+/*.to-top-btn:hover {
+/*  background-color: #ff9900; /* Replace with your desired hover color */
+
+/*}
+*/
+
+.to-top-btn i {
+  margin:2px 15%;
+  width: 80%;
+  height:80%;
+  color: white;
+}
+
 /* About Header Of Pages*/
 
 header {
@@ -642,6 +671,7 @@ header {
 
 @media (min-width: 300px) and (max-width: 600px) {
   [data-row="middle"] {
+    left: 7%;
     width: 80%;
   }
 }
@@ -2340,6 +2370,13 @@ footer .social-media h1 {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 51 51 / var(--tw-text-opacity));
+}
+
+footer .social-media a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 footer .social-media i {

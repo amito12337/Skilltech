@@ -6,6 +6,7 @@ let btnsHeader = document.querySelector('.btns-login-and-sign')
 let body = document.querySelector('body')
 let header = document.querySelector('header')
 let footer = document.querySelector("footer");
+let toTop = document.querySelector(".to-top-btn");
 
 function showMenu(){
     if (dropMenu.classList.contains("hidden")) {
@@ -37,18 +38,37 @@ onscroll = () => {
         header.classList.replace("header-bg", "bg-opacity-0");
     }
 
+    if (value >= 560) {
+      toTop.style.display = 'block';
+    } else {
+      toTop.style.display = "none";
+    }
+
 }
 
+toTop.onclick = () => {
+  window.scrollTo({
+    top:0,
+    behavior:"smooth",
+  })
+}
 // About Header Of Home Page
 // About Main Of Services Page 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   let currentFeedbackIndex = 1; // Track the current feedback index
-
   // Function to show the feedback based on the index
   function showFeedback(index) {
     // Hide all feedbacks
     document.querySelectorAll(".bef-feedlback").forEach((feedback) => {
       feedback.classList.add("hidden");
+      if (window.innerWidth >= 800) {
+        // Show the feedback3
+        if (currentFeedbackIndex === 2) {
+          document.getElementById(`feedlback${3}`).classList.remove("hidden");
+        }
+      } else {
+        
+      }
     });
 
     // Show the feedback based on the index
@@ -65,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
       currentFeedbackIndex = (currentFeedbackIndex - 1 + 3) % 3 || 3; // Cycle through 1, 2, 3
       showFeedback(currentFeedbackIndex);
     });
-
   // Event listener for the right chevron
   document
     .querySelector(".fa-chevron-right")

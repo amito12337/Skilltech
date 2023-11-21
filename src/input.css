@@ -19,6 +19,28 @@ body {
 img {
   @apply lg:w-[100%]
 }
+.to-top-btn {
+  background: red;
+  border-radius: 14px;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px; 
+  display: none;
+}
+
+/*.to-top-btn:hover {
+/*  background-color: #ff9900; /* Replace with your desired hover color */
+/*}
+*/
+.to-top-btn i {
+  margin:2px 15%;
+  width: 80%;
+  height:80%;
+  color: white;
+}
+
 /* About Header Of Pages*/
 
 header {
@@ -29,7 +51,7 @@ header {
   background-image:var(--color-bg-linear);
 }
 [data-row="middle"] {
-  @apply flex items-center justify-between sm:w-[80%] md:w-[80%] lg:w-[80%] relative left-[10%] xs:left-0 right-[10%];
+  @apply flex items-center justify-between sm:w-[80%] md:w-[80%] lg:w-[80%] relative left-[10%] sm:left-[7%] xs:left-0 right-[10%];
 
 }
 header h1 {
@@ -507,6 +529,9 @@ footer .social-media {
 }
 footer .social-media h1 {
   @apply text-5xl font-bold text-primary mb-10;
+}
+footer .social-media a {
+    @apply text-6xl  my-4;
 }
 footer .social-media i {
   @apply text-6xl  my-4 mx-5 xs:mx-9;
