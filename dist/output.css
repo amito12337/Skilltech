@@ -538,10 +538,6 @@ video {
   visibility: visible;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
@@ -566,9 +562,9 @@ video {
   --tw-bg-opacity: 0;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-7xl {
@@ -577,8 +573,8 @@ video {
 }
 
 :root {
-  --body-font: 'Quicksand', sans-serif;
-  --color-bg-linear :  linear-gradient(120deg, #111, #222);
+  --body-font: "Quicksand", sans-serif;
+  --color-bg-linear: linear-gradient(120deg, #111, #222);
   --main-color: #1a1a1a;
   --secondary-color: #333;
   --thirdary-color: #444;
@@ -615,7 +611,13 @@ body {
   color: rgb(255 51 51 / var(--tw-text-opacity));
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
   img {
     width: 100%;
   }
@@ -623,7 +625,7 @@ body {
 
 .to-top-btn {
   background: red;
-  border-radius: 14px;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
   position: fixed;
@@ -632,16 +634,12 @@ body {
   display: none;
 }
 
-/*.to-top-btn:hover {
-/*  background-color: #ff9900; /* Replace with your desired hover color */
-
-/*}
-*/
+.to-top-btn:hover {
+  background-color: #ff9900;
+}
 
 .to-top-btn i {
-  margin:2px 15%;
-  width: 80%;
-  height:80%;
+  margin: 0px 6px;
   color: white;
 }
 
@@ -651,54 +649,62 @@ header {
   position: fixed;
   top: 0px;
   z-index: 10;
-  display: flex;
   width: 100%;
-  height: 75px;
 }
 
 .header-bg {
-  background-image:var(--color-bg-linear);
+  background-image: var(--color-bg-linear);
 }
 
 [data-row="middle"] {
-  position: relative;
-  left: 10%;
-  right: 10%;
+  margin-left: 5%;
   display: flex;
+  width: 90%;
   align-items: center;
   justify-content: space-between;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 1200px) {
   [data-row="middle"] {
-    left: 7%;
+    margin-left: 10%;
     width: 80%;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 800px) {
-  [data-row="middle"] {
-    width: 80%;
-  }
-}
-
-@media (min-width: 800px) {
-  [data-row="middle"] {
-    width: 80%;
-  }
-}
-
-@media (min-width: 0px) and (max-width: 300px) {
-  [data-row="middle"] {
-    left: 0px;
   }
 }
 
 header h1 {
-  font-size: 6rem;
-  line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  header h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  header h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  header h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 6rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  header h1 {
+    font-size: 3.1rem;
+  }
 }
 
 header h1 span {
@@ -713,6 +719,24 @@ header h1 span {
   justify-content: space-around;
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  .bef-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .bef-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  .bef-nav {
+    display: none;
+  }
+}
+
 .nav {
   display: flex;
   list-style-type: none;
@@ -721,8 +745,8 @@ header h1 span {
 
 .item-nav {
   border-radius: 30px;
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
+  margin-left: 0.26rem;
+  margin-right: 0.26rem;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -748,9 +772,21 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .item-nav {
     display: none;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .item-nav {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .item-nav {
+    font-size: 1.7rem;
   }
 }
 
@@ -775,7 +811,13 @@ header h1 span {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
+  .menu-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
   .menu-bar {
     display: none;
   }
@@ -784,48 +826,43 @@ header h1 span {
 .dropdown-menu {
   position: absolute;
   margin-bottom: 1.5rem;
-  margin-top: 620px;
+  margin-top: 730px;
   width: 100%;
   text-align: center;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .dropdown-menu {
-    margin-top: 730px;
+    margin-top: 620px;
+    display: none;
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
-  .dropdown-menu {
-    margin-top: 730px;
-  }
-}
-
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .dropdown-menu {
     display: none;
   }
 }
 
-@media (min-width: 0px) and (max-width: 300px) {
-  .dropdown-menu {
-    margin-top: 666px;
-  }
-}
-
 @media (min-width: 300px) and (max-width: 600px) {
   .icon-menu {
     display: block;
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .icon-menu {
     display: block;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
+  .icon-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
   .icon-menu {
     display: none;
   }
@@ -838,8 +875,8 @@ header h1 span {
 }
 
 .nav-dropped {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  width: 80%;
   list-style-type: none;
   overflow: hidden;
   text-align: center;
@@ -855,22 +892,9 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .nav-dropped {
     width: 80%;
-  }
-}
-
-@media (min-width: 800px) {
-  .nav-dropped {
-    width: 80%;
-  }
-}
-
-@media (min-width: 0px) and (max-width: 300px) {
-  .nav-dropped {
-    margin-left: 20%;
-    margin-right: 20%;
   }
 }
 
@@ -881,14 +905,12 @@ header h1 span {
     rgb(57, 57, 147, 0.2),
     rgb(22, 22, 91, 0.2)
   );
-  height: 520px;
+  height: 100%;
 }
 
 .item-nav-dropped {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
@@ -917,12 +939,18 @@ header h1 span {
 /*About Main Of Home Page */
 
 [data-row="main-middle"] {
+  margin-top: 185px;
   width: 100%;
-  margin-top: 130px;
 }
 
 .img1 img {
   height: 580px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .img1 img {
+    height: 720px;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
@@ -939,43 +967,49 @@ header h1 span {
 
 .img1 .informations {
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 0px;
   height: 50%;
-  width: 90%;
-}
-
-@media (min-width: 800px) {
-  .img1 .informations {
-    top: 25%;
-  }
+  width: 100%;
+  padding-left: 5%;
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
   .img1 .informations {
-    top: 0%;
+    padding-left: 0px;
   }
 }
 
 .img1 .informations h1 {
-  position: absolute;
-  top: 0px;
-  font-size: 4.5rem;
+  margin-top: 0px;
+  font-size: 3rem;
   line-height: 1;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .img1 .informations h1 {
-    top: -40px;
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .img1 .informations h1 {
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img1 .informations h1 {
+    margin-top: 7rem;
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
   .img1 .informations h1 {
-    font-size: 3.5rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -984,27 +1018,40 @@ header h1 span {
 }
 
 .img1 .informations p {
-  margin-top: 80px;
+  margin-top: 30px;
+  width: 100%;
   font-size: 2.25rem;
   line-height: 2.5rem;
+  line-height: 31px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
   .img1 .informations p {
-    margin-top: 40px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
-.img1 .informations p {
-  width: 86%;
-  line-height: 30px;
+@media (min-width: 900px) and (max-width: 1200px) {
+  .img1 .informations p {
+    line-height: 45px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  .img1 .informations p {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .img1 .informations .btn {
   margin-top: 1.75rem;
-  margin-left: 45%;
+  margin-left: 40%;
   cursor: pointer;
   border-radius: 0.375rem;
   border-width: 2px;
@@ -1035,19 +1082,23 @@ header h1 span {
 
 @media (min-width: 300px) and (max-width: 600px) {
   .img1 .informations .btn {
-    margin-left: 32%;
+    margin-left: 20%;
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .img1 .informations .btn {
-    margin-top: 4rem;
+    margin-top: 0.5rem;
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
   .img1 .informations .btn {
-    margin-left: 30%;
+    margin-left: 15%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -1061,15 +1112,15 @@ header h1 span {
 }
 
 .services-at-home {
-  width: 80%;
   margin-left: 10%;
+  width: 80%;
 }
 
 .services-at-home .h1 {
   margin-bottom: 1rem;
   padding-top: 1.5rem;
   text-align: center;
-  font-size: 6rem;
+  font-size: 3.75rem;
   line-height: 1;
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -1078,9 +1129,9 @@ header h1 span {
 }
 
 .services-at-home .p {
-  padding-left: 5rem;
+  padding-left: 0px;
   padding-top: 2.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   text-align: center;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1113,7 +1164,7 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .services-at-home .services {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1138,11 +1189,11 @@ header h1 span {
 
 @media (min-width: 300px) and (max-width: 600px) {
   .services-at-home .btn {
-    left: 33%;
+    left: 25%;
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .services-at-home .btn {
     left: 40%;
   }
@@ -1150,7 +1201,11 @@ header h1 span {
 
 @media (min-width: 0px) and (max-width: 300px) {
   .services-at-home .btn {
-    left: 30%;
+    left: 15%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -1162,7 +1217,7 @@ header h1 span {
   width: 100%;
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .services-at-home .services .data-backub {
     margin-left: 50%;
   }
@@ -1171,34 +1226,27 @@ header h1 span {
 .services-at-home .services .service .title-and-desc h1 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 1200px) {
   .services-at-home .services .service .title-and-desc h1 {
-    text-align: center;
-  }
-}
-
-@media (min-width: 800px) {
-  .services-at-home .services .service .title-and-desc h1 {
-    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
   .services-at-home .services .service .title-and-desc h1 {
-    text-align: center;
     font-size: 2rem;
   }
 }
 
 .services-at-home .services .service .title-and-desc h1 {
-  line-height: 26px;
   font-family: var(--bodyFont);
 }
 
@@ -1206,12 +1254,10 @@ header h1 span {
   margin: 0px;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  padding-top: 2.5rem;
-  text-align: center;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 35px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1245,16 +1291,37 @@ header h1 span {
 
 .simply-better p {
   margin: 0px;
-  margin-bottom: 2rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   text-align: center;
-  font-size: 4.5rem;
-  line-height: 1;
+  font-size: 2rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .simply-better p {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .simply-better p {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .simply-better p {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+.simply-better p {
   font-family: var(--bodyFont);
-  line-height: 50px;
 }
 
 .simply-better .btn {
@@ -1271,19 +1338,23 @@ header h1 span {
 
 @media (min-width: 300px) and (max-width: 600px) {
   .simply-better .btn {
-    margin-left: 33%;
+    margin-left: 27%;
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .simply-better .btn {
-    margin-left: 40%;
+    margin-left: 45%;
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
   .simply-better .btn {
-    margin-left: 30%;
+    margin-left: 15%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -1311,14 +1382,33 @@ header h1 span {
 
 .saying .the-saying {
   margin: 0px;
-  text-align: center;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .saying .the-saying {
+    text-align: center;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .saying .the-saying {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .saying .the-saying {
+    text-align: center;
+  }
+}
+
+.saying .the-saying {
   width: 70%;
-  line-height: 30px;
   margin: 0px 15%;
   padding-top: 16px;
   font-family: var(--bodyFont);
@@ -1349,7 +1439,7 @@ header h1 span {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .section1-at-about .inside-section-1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1389,7 +1479,7 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .section1-at-about .inside-section-1 .col-1 p {
     line-height: 46px;
   }
@@ -1422,7 +1512,7 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .section1-at-about .inside-section-1 .col-2 p {
     line-height: 30px;
   }
@@ -1472,7 +1562,7 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .section-2-at-about .inside-it {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1484,7 +1574,7 @@ header h1 span {
   }
 }
 
-.section-2-at-about .inside-it{
+.section-2-at-about .inside-it {
   width: 80%;
   margin-left: 10%;
 }
@@ -1499,7 +1589,7 @@ header h1 span {
   width: 60%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .section-2-at-about .inside-it .item img {
     margin-left: 10%;
     width: 80%;
@@ -1511,7 +1601,7 @@ header h1 span {
   width: 60%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .section-2-at-about .inside-it .item6 img {
     margin-left: 20%;
     width: 80%;
@@ -1530,7 +1620,7 @@ header h1 span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .section-2-at-about .inside-it .item h1 {
     font-size: 3.75rem;
     line-height: 1;
@@ -1549,7 +1639,7 @@ header h1 span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .section-2-at-about .inside-it .item p {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1576,7 +1666,7 @@ header h1 span {
 }
 
 .section-4-at-contact {
-  background:var(--secondary-color);
+  background: var(--secondary-color);
 }
 
 .section-4-at-contact .main h1 {
@@ -1613,13 +1703,13 @@ header h1 span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .section-4-at-contact .main p {
     text-align: center;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .section-4-at-contact .main p {
     text-align: center;
   }
@@ -1638,7 +1728,7 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .section-4-at-contact #imgs {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1655,31 +1745,36 @@ header h1 span {
 /* About Main Of Services Page */
 
 .Services .bef-section1 {
+  margin-left: 10%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 80%;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
   .Services .bef-section1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-left: 5%;
+    width: 90%;
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .Services .bef-section1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .Services .bef-section1 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
   .Services .bef-section1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-left: 0.25rem;
+    width: 99.99%;
   }
-}
-
-.Services .bef-section1 {
-  width: 80%;
-  margin-left: 10%;
 }
 
 .Services .bef-section1 .Section1-at-Services .first {
@@ -1723,12 +1818,11 @@ header h1 span {
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  line-height: 20px;
 }
 
 .Services .bef-section1 .Section1-at-Services .bef-btn .btn {
   margin-top: 2.25rem;
-  margin-left: 40%;
+  margin-left: 30%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1.75rem;
@@ -1737,35 +1831,35 @@ header h1 span {
 
 @media (min-width: 300px) and (max-width: 600px) {
   .Services .bef-section1 .Section1-at-Services .bef-btn .btn {
-    margin-left: 37%;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 800px) {
-  .Services .bef-section1 .Section1-at-Services .bef-btn .btn {
-    margin-left: 45%;
+    margin-left: 25%;
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
   .Services .bef-section1 .Section1-at-Services .bef-btn .btn {
-    margin-left: 30%;
+    margin-left: 25%;
   }
 }
 
 .Services .bef-section1 div img {
   width: 100%;
+  height: 100%;
   margin-bottom: 100px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.Services .price-list {
-  padding: 0 10%;
+.Services .bef-price-list {
+  width: 100%;
   background: var(--secondary-color);
 }
 
-.Services .price-list .head p {
+.Services .bef-price-list .price-list {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.Services .bef-price-list .price-list .head p {
   margin: 0px;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1778,7 +1872,7 @@ header h1 span {
   font-family: var(--body-font);
 }
 
-.Services .price-list .head h1 {
+.Services .bef-price-list .price-list .head h1 {
   margin-top: 1rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -1789,7 +1883,7 @@ header h1 span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.Services .price-list .price-table {
+.Services .bef-price-list .price-list .price-table {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: space-between;
@@ -1797,50 +1891,67 @@ header h1 span {
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
-  .Services .price-list .price-table {
+  .Services .bef-price-list .price-list .price-table {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
-  .Services .price-list .price-table {
+  .Services .bef-price-list .price-list .price-table {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
-.Services .price-list .price-table .column .header {
+.Services .bef-price-list .price-list .price-table .column .header {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
   display: flex;
   height: 45px;
   align-items: center;
   justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
-  .Services .price-list .price-table .column .header {
+@media (min-width: 600px) and (max-width: 900px) {
+  .Services .bef-price-list .price-list .price-table .column .header {
     height: 55px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .Services .bef-price-list .price-list .price-table .column .header {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
-  .Services .price-list .price-table .column .header {
+  .Services .bef-price-list .price-list .price-table .column .header {
     height: 55px;
   }
 }
 
-.Services .price-list .price-table .column .header h1 {
+.Services .bef-price-list .price-list .price-table .column .header h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .Services .bef-price-list .price-list .price-table .column .header h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.Services .bef-price-list .price-list .price-table .column .header h1 {
   font-family: var(--body-font);
 }
 
-.Services .price-list .price-table .column .header .price {
+.Services .bef-price-list .price-list .price-table .column .header .price {
   margin: 0px;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1849,43 +1960,47 @@ header h1 span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.Services .price-list .price-table .column .Service-desc {
+.Services .bef-price-list .price-list .price-table .column .Service-desc {
   margin: 0px;
-  height: 150px;
+  margin-top: 1rem;
+  height: 190px;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  font-weight: 600;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
-  .Services .price-list .price-table .column .Service-desc {
+  .Services .bef-price-list .price-list .price-table .column .Service-desc {
     height: 120px;
     padding-top: 1.5rem;
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
-  .Services .price-list .price-table .column .Service-desc {
+@media (min-width: 600px) and (max-width: 900px) {
+  .Services .bef-price-list .price-list .price-table .column .Service-desc {
     height: 180px;
     padding-top: 1.5rem;
   }
 }
 
-@media (min-width: 800px) {
-  .Services .price-list .price-table .column .Service-desc {
+@media (min-width: 900px) and (max-width: 1200px) {
+  .Services .bef-price-list .price-list .price-table .column .Service-desc {
+    height: 350px;
     padding-top: 0.75rem;
   }
 }
 
-.Services .price-list .price-table .column .Service-desc {
-  line-height: 23px;
+@media (min-width: 1200px) {
+  .Services .bef-price-list .price-list .price-table .column .Service-desc {
+    height: 235px;
+  }
 }
 
-.Services .price-list .price-table .column hr {
+.Services .bef-price-list .price-list .price-table .column hr {
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(255 51 51 / var(--tw-bg-opacity));
@@ -1911,7 +2026,7 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .Section2-at-services img {
     height: 500px;
   }
@@ -1970,7 +2085,7 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .Section2-at-services .inside-section2 .main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2026,7 +2141,7 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .Section2-at-services .inside-section2 button {
     margin-left: 44%;
   }
@@ -2091,13 +2206,13 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .What-our-client-say .main .feedlbacks .inside-feedlbacks {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .What-our-client-say .main .feedlbacks .inside-feedlbacks {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2109,7 +2224,7 @@ header h1 span {
   }
 }
 
-.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback hr {
+.What-our-client-say .main .feedlbacks .inside-feedlbacks .bef-feedlback hr {
   margin-bottom: 0.5rem;
   border-style: none;
   --tw-bg-opacity: 1;
@@ -2118,12 +2233,17 @@ header h1 span {
   height: 1.75px;
 }
 
-.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback {
+.What-our-client-say .main .feedlbacks .inside-feedlbacks .bef-feedlback {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .feedlback {
+.What-our-client-say
+  .main
+  .feedlbacks
+  .inside-feedlbacks
+  .bef-feedlback
+  .feedlback {
   margin: 0px;
   margin-bottom: 2rem;
   font-size: 1.5rem;
@@ -2134,18 +2254,36 @@ header h1 span {
   line-height: 25px;
 }
 
-.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .informations {
+.What-our-client-say
+  .main
+  .feedlbacks
+  .inside-feedlbacks
+  .bef-feedlback
+  .informations {
   display: flex;
   align-items: center;
   width: 250px;
 }
 
-.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .informations img {
+.What-our-client-say
+  .main
+  .feedlbacks
+  .inside-feedlbacks
+  .bef-feedlback
+  .informations
+  img {
   border-radius: 9999px;
   width: 68px;
 }
 
-.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .informations .identifications h1 {
+.What-our-client-say
+  .main
+  .feedlbacks
+  .inside-feedlbacks
+  .bef-feedlback
+  .informations
+  .identifications
+  h1 {
   margin-left: 2.25rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -2154,7 +2292,14 @@ header h1 span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.What-our-client-say .main  .feedlbacks .inside-feedlbacks .bef-feedlback .informations .identifications p {
+.What-our-client-say
+  .main
+  .feedlbacks
+  .inside-feedlbacks
+  .bef-feedlback
+  .informations
+  .identifications
+  p {
   margin-left: 2.25rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -2186,14 +2331,14 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .have-a-question {
     width: 100%;
     text-align: center;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .have-a-question {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2219,7 +2364,7 @@ header h1 span {
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .have-a-question .col {
     margin-left: 5%;
     width: 80%;
@@ -2293,7 +2438,7 @@ header h1 span {
   padding-right: 2rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .have-a-question .col-3 #colored-lines-form .btn {
     position: absolute;
     bottom: 1.5rem;
@@ -2306,7 +2451,7 @@ header h1 span {
   margin: 50px 0 30px 10%;
 }
 
-.have-a-question .col-3 #colored-lines-form .colored-line{
+.have-a-question .col-3 #colored-lines-form .colored-line {
   height: 1px;
   width: 100%;
   background-color: red;
@@ -2327,7 +2472,8 @@ header h1 span {
   width: 100%;
 }
 
-.have-a-question .col-3 #colored-lines-form .colored-line input:hover, input:focus {
+.have-a-question .col-3 #colored-lines-form .colored-line input:hover,
+input:focus {
   color: white;
 }
 
@@ -2339,16 +2485,28 @@ footer {
   margin-top: 8rem;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
+  padding: 50px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   footer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
+@media (min-width: 1200px) {
+  footer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  footer {
+    padding: 0px;
+  }
+}
+
 footer {
-  padding: 50px;
   background: var(--color-bg-linear);
 }
 
@@ -2379,6 +2537,20 @@ footer .social-media a {
   line-height: 1;
 }
 
+@media (min-width: 900px) and (max-width: 1200px) {
+  footer .social-media a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer .social-media a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
 footer .social-media i {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -2399,7 +2571,8 @@ footer .social-media i {
   color: #b3bccb;
 }
 
-footer .social-media i:hover,footer .site-menu ul li a:hover{
+footer .social-media i:hover,
+footer .site-menu ul li a:hover {
   color: rgba(221, 120, 120, 0.773);
   transition: 0.8s linear;
 }
@@ -2443,8 +2616,6 @@ footer .site-menu ul li a {
 }
 
 footer .Skilltech2 {
-  margin-left: 3rem;
-  margin-right: 3rem;
   margin-top: 3rem;
 }
 
@@ -2477,7 +2648,7 @@ footer .Skilltech2 p {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .lg\:block {
     display: block;
   }

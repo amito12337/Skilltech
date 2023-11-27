@@ -1,246 +1,265 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Skilltech</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--This links is h=just use if the internet was not exist -->
-        <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css">
-        <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css">
-        <!--This links is h=just use if the internet was not exist -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="output.css" rel="stylesheet">
-    </head>
-    <body>
-        <header  class="bg-opacity-0">
-            <div data-row="middle">
-                <h1><a href="index.html"><span>S</span>killtech</a></h1>
-                <div class="bef-nav">
-                    <nav class="nav">
-                        <li><a class="item-nav" href="index.html">Home</a></li>
-                        <li><a class="item-nav" href="Services.html">Services</a></li>
-                        <li><a class="item-nav" href="About.html">About US</a></li>
-                        <li><a class="item-nav" href="Contact.html">Contact</a></li>
-                    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Skilltech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--This links is h=just use if the internet was not exist -->
+    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css" />
+    <!--This links is h=just use if the internet was not exist -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-opacity-0">
+      <div data-row="middle">
+        <h1><a href="index.html"><span>S</span>killtech</a></h1>
+        <div class="bef-nav">
+          <nav class="nav">
+            <li><a class="item-nav" href="index.html">Home</a></li>
+            <li><a class="item-nav" href="Services.html">Services</a></li>
+            <li><a class="item-nav" href="About.html">About US</a></li>
+            <li><a class="item-nav" href="Contact.html">Contact</a></li>
+          </nav>
+        </div>
+        <div class="icon-menu">
+          <i onclick="showMenu()" style="color: aliceblue;" class="menu-bar fa-bars  fa-solid  fa-2xl">
+          </i>
+        </div>
+        <div class="dropdown-menu hidden">
+          <nav class="nav-dropped">
+            <li class="item-nav-dropped"><a href="index.html">Home</a></li>
+            <li class="item-nav-dropped"><a href="Services.html">Services</a></li>
+            <li class="item-nav-dropped"><a href="About.html">About Us</a></li>
+            <li class="item-nav-dropped"><a href="Contact.html">Contact Us</a></li>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main data-row="main-middle" class="Services">
+      <div class="bef-section1">
+        <div class="Section1-at-Services">
+          <h1 class="first">Services</h1>
+          <hr />
+          <div>
+            <h1>Network Security</h1>
+            <p>
+              Our network security service provides robust protection to
+              safeguard your website from malicious threats.
+            </p>
+          </div>
+          <div>
+            <h1>Business Software and Hardware Installation</h1>
+            <p>
+              Our computer consulting agency provides professional software and
+              hardware installation services to ensure smooth website
+              operations.
+            </p>
+          </div>
+          <div>
+            <h1>Data Backup and Recovery</h1>
+            <p>
+              Our data backup and recovery service ensures your website is
+              secure and can be recovered in case of a disaster.
+            </p>
+          </div>
+          <div class="bef-btn">
+            <button class="btn">VIEW MORE</button>
+          </div>
+        </div>
+        <div>
+          <img src="imgs/Services/Network-security.jpg" />
+        </div>
+      </div>
+      <dic class="bef-price-list">
+        <div class="price-list">
+          <div class="head">
+            <p>Sevices</p>
+            <h1>Price List</h1>
+          </div>
+          <div class="price-table">
+            <div class="column col-1">
+              <div class="header">
+                <h1>Network Security</h1>
+                <p class="price">$100</p>
+              </div>
+              <p class="Service-desc">
+                Our network security service provides robust protection to
+                safeguard your website from mallicious threats.
+              </p>
+              <hr />
+              <div class="header">
+                <h1>Data Backub and Recovery</h1>
+                <p class="price">$100</p>
+              </div>
+              <p class="Service-desc">
+                Our comprehensive backup and recovery service protects against
+                data loss and provides quick recovery in an emergency.
+              </p>
+              <hr />
+              <div class="header">
+                <h1>System Maintenance</h1>
+                <p class="price">$100</p>
+              </div>
+              <p class="Service-desc">
+                Our system maintenance service offers reliable and secure upkeep
+                of your website, enabling efficient and professional promotion of
+                your computer consulting agency.
+              </p>
+              <hr class="hidden sm:block" />
+            </div>
+            <div class="column col-2">
+              <div class="header xs:h-[60px]">
+                <h1>Business Software and Hardware Installation</h1>
+                <p class="price">$100</p>
+              </div>
+              <p class="Service-desc">
+                We ensure reliable website setup with comprehensive software and
+                hardware installation services tailored to meet your requirements.
+              </p>
+              <hr />
+              <div class="header">
+                <h1>Network Insfracture Setup</h1>
+                <p class="price">$100</p>
+              </div>
+              <p class="Service-desc">
+                Our network infrastructure setup service ensures your computer
+                consulting agency is up and running with an optimized, secure
+                connection infrastructure.
+              </p>
+              <hr />
+              <div class="header">
+                <h1>Cloud Computing Solutions</h1>
+                <p class="price">$100</p>
+              </div>
+              <p class="Service-desc">
+                Our cloud solutions enable businesses to scale their computing
+                power dynamically, ensuring optimal performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </dic>
+      <div class="Section2-at-services">
+        <div class="bef-inside-section">
+          <img src="imgs/Services//img2.jpg" />
+          <div class="inside-section2">
+            <div class="head">
+              <h1>Our results</h1>
+              <p>
+                We’re proud of what we’ve achieved, but we’re not stopping
+                there.
+              </p>
+            </div>
+            <div class="main">
+              <div>
+                <h1>5+</h1>
+                <p>years of experience</p>
+              </div>
+              <div>
+                <h1>100%</h1>
+                <p>happy clients</p>
+              </div>
+              <div>
+                <h1>50+</h1>
+                <p>events hosted</p>
+              </div>
+              <div>
+                <h1>230</h1>
+                <p>projects completed</p>
+              </div>
+            </div>
+            <button class="btn">EXPLORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="What-our-client-say">
+        <div class="main">
+          <h1 class="h1">What Our Client Say</h1>
+          <div class="feedlbacks">
+            <i
+              class="fa-solid fa-chevron-left text-7xl mr-3"
+              style="color: #fb3737"></i>
+            <div class="inside-feedlbacks">
+              <div class="bef-feedlback" id="feedlback1">
+                <hr />
+                <p class="feedlback">
+                  Their service surpassed all my expectations - I would
+                  definitely recommend their services!
+                </p>
+                <div class="informations">
+                  <img src="imgs/Services//img1-person-.jpg" />
+                  <div class="identifications">
+                    <h1>David Smith</h1>
+                    <p>Blogger</p>
+                  </div>
                 </div>
-                <div class="icon-menu">
-                    <i onclick="showMenu()" style="color: aliceblue;" class="menu-bar fa-bars  fa-solid  fa-2xl">
-                    </i>
+              </div>
+              <div class="bef-feedlback lg:block hidden" id="feedlback2">
+                <hr />
+                <p class="feedlback">
+                  Their service surpassed all my expectations - I would
+                  definitely recommend their services!
+                </p>
+                <div class="informations">
+                  <img src="imgs/Services//img-person2-.jpg" />
+                  <div class="identifications">
+                    <h1>Dina Maro</h1>
+                    <p>HR Manager</p>
+                  </div>
                 </div>
-                <div class="dropdown-menu hidden">
-                    <nav class="nav-dropped">   
-                        <li class="item-nav-dropped"><a href="index.html">Home</a></li>
-                        <li class="item-nav-dropped"><a href="Services.html">Services</a></li>
-                        <li class="item-nav-dropped"><a href="About.html">About Us</a></li>
-                        <li class="item-nav-dropped"><a href="Contact.html">Contact Us</a></li>
-                    </nav>
+              </div>
+              <div class="bef-feedlback hidden" id="feedlback3">
+                <hr />
+                <p class="feedlback">
+                  Their service surpassed all my expectations - I would
+                  definitely recommend their services!
+                </p>
+                <div class="informations">
+                  <img src="imgs/Services//img-person1.jpg" />
+                  <div class="identifications">
+                    <h1>William Brown</h1>
+                    <p>English teacher</p>
+                  </div>
                 </div>
-            </div>      
-        </header>
-        <main data-row="main-middle" class="Services">
-            <div class="bef-section1">
-                <div class="Section1-at-Services">
-                    <h1 class="first">Services</h1>
-                    <hr>
-                    <div>
-                        <h1>Network Security</h1>
-                        <p>Our network security service provides robust protection to safeguard your website from malicious threats.</p>
-                    </div>
-                    <div>
-                        <h1>Business Software and Hardware Installation</h1>
-                        <p>Our computer consulting agency provides professional software and hardware installation services to ensure smooth website operations.</p>
-                    </div>
-                    <div>
-                        <h1>Data Backup and Recovery</h1>
-                        <p>Our data backup and recovery service ensures your website is secure and can be recovered in case of a disaster.</p>
-                    </div>
-                    <div class="bef-btn">
-                        <button class="btn">VIEW MORE</button>
-                    </div>
-                </div>
-                <div>
-                    <img src="imgs/Services/Network-security.jpg">
-                </div>
+              </div>
             </div>
-            <div class="price-list">
-                    <div class="head">
-                        <p>Sevices</p>
-                        <h1>Price List</h1>
-                    </div>
-                    <div class="price-table">
-                        <div class="column col-1">
-                            <div class="header">
-                                <h1>Network Security</h1>
-                                <p class="price">$100</p>
-                            </div>
-                            <p class="Service-desc">Our network security service provides 
-                                robust protection to safeguard your 
-                                website from mallicious threats.
-                            </p>
-                            <hr>
-                            <div class="header">
-                                <h1>Data Backub and Recovery</h1>
-                                <p class="price">$100</p>
-                            </div>
-                            <p class="Service-desc">Our comprehensive backup and recovery 
-                                service protects against data loss 
-                                and provides quick recovery in an 
-                                emergency.
-                            </p>
-                            <hr>
-                            <div class="header">
-                                <h1>System Maintenance</h1>
-                                <p class="price">$100</p>
-                            </div>
-                            <p class="Service-desc">Our system maintenance service 
-                                offers reliable and secure 
-                                upkeep of your website, 
-                                enabling efficient and 
-                                professional promotion of 
-                                your computer consulting 
-                                agency.
-                            </p>
-                            <hr class="hidden sm:block">
-                        </div>
-                        <div class="column col-2">
-                            <div class="header xs:h-[60px]">
-                                <h1>Business Software and Hardware Installation</h1>
-                                <p class="price">$100</p>
-                            </div>
-                            <p  class="Service-desc">We ensure reliable website setup with 
-                                comprehensive software and hardware 
-                                installation services tailored to 
-                                meet your requirements.
-                            </p>
-                            <hr>
-                            <div class="header">
-                                <h1>Network Insfracture Setup</h1>
-                                <p class="price">$100</p>
-                            </div>
-                            <p class="Service-desc">Our network infrastructure setup service 
-                                ensures your computer consulting agency 
-                                is up and running with an optimized, 
-                                secure connection infrastructure.
-                            </p>
-                            <hr>
-                            <div class="header">
-                                <h1>Cloud Computing Solutions</h1>
-                                <p class="price">$100</p>
-                            </div>
-                            <p class="Service-desc">Our cloud solutions enable businesses to 
-                                scale their computing power dynamically, 
-                                ensuring optimal performance.
-                            </p>
-                        </div>
-                    </div>
-            </div>
-            <div class="Section2-at-services">
-                <div class="bef-inside-section">
-                    <img src="imgs/Services//img2.jpg">
-                    <div class="inside-section2">
-                    <div class="head">
-                        <h1>Our results</h1>
-                        <p>We’re proud of what we’ve achieved, but we’re not stopping there.</p>
-                    </div>
-                    <div class="main">
-                        <div>
-                            <h1>5+</h1>
-                            <p>years of experience</p>
-                        </div>
-                        <div>
-                            <h1>100%</h1>
-                            <p>happy clients</p>
-                        </div>
-                        <div>
-                            <h1>50+</h1>
-                            <p>events hosted</p>
-                        </div>
-                        <div>
-                            <h1>230</h1>
-                            <p>projects completed</p>
-                        </div>
-                    </div>
-                    <button class="btn">EXPLORE</button>
-                </div>
-            </div>
-            </div>
-            <div class="What-our-client-say">
-                <div class="main">
-                    <h1 class="h1">What Our Client Say</h1>
-                    <div class="feedlbacks">
-                        <i class="fa-solid fa-chevron-left text-7xl mr-3" style="color: #fb3737;"></i>
-                        <div class="inside-feedlbacks">
-                            <div class="bef-feedlback" id="feedlback1">
-                                <hr>
-                                <p class="feedlback">Their service surpassed all my
-                                    expectations - I would definitely 
-                                    recommend their services!
-                                </p>
-                                <div class="informations">
-                                    <img src="imgs/Services//img1-person-.jpg">
-                                    <div class="identifications">
-                                        <h1>David Smith</h1>
-                                        <p>Blogger</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bef-feedlback lg:block hidden" id="feedlback2">
-                                <hr>
-                                <p class="feedlback">Their service surpassed all my
-                                    expectations - I would definitely 
-                                    recommend their services!
-                                </p>
-                                <div class="informations">
-                                    <img src="imgs/Services//img-person2-.jpg">
-                                    <div class="identifications">
-                                        <h1>Dina Maro</h1>
-                                        <p>HR Manager</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bef-feedlback hidden" id="feedlback3">
-                                <hr>
-                                <p class="feedlback">Their service surpassed all my
-                                    expectations - I would definitely 
-                                    recommend their services!
-                                </p>
-                                <div class="informations">
-                                    <img src="imgs/Services//img-person1.jpg">
-                                    <div class="identifications">
-                                        <h1>William Brown</h1>
-                                        <p>English teacher</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <i class="fa-solid fa-chevron-right text-7xl" style="color: #fb3737;"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="to-top-btn">
-                    <i class="fa-solid fa-arrow-up text-5xl"></i>
-            </div>
-        </main>
-        <footer>
-            <div class="social-media">
-                    <h1>social Media</h1>
-                    <a href="https://web.facebook.com/apdsamad.amaitit"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/bdlsmdmytyt/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com/amaitit28716"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
-            <div class="site-menu">
-                <h1>Site Menu</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="About.html">About US</a></li>
-                    <li><a href="Contact.html">Contact US</a></li>
-                </ul>
-            </div>
-            <div class="Skilltech2">
-                <h1>Skilltech</h1>
-                <p>Gain your skills with us</p>
-            </div>
-        </footer>
-        <script src="main.js"></script>
-    </body>
+            <i
+              class="fa-solid fa-chevron-right text-7xl"
+              style="color: #fb3737"></i>
+          </div>
+        </div>
+      </div>
+      <div class="to-top-btn">
+        <i class="fa-solid fa-arrow-up text-2xl"></i>
+      </div>
+    </main>
+    <footer>
+      <div class="social-media">
+        <h1>social Media</h1>
+        <a href="https://web.facebook.com/apdsamad.amaitit"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bdlsmdmytyt/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/amaitit28716"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="site-menu">
+        <h1>Site Menu</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="About.html">About US</a></li>
+          <li><a href="Contact.html">Contact US</a></li>
+        </ul>
+      </div>
+      <div class="Skilltech2">
+        <h1>Skilltech</h1>
+        <p>Gain your skills with us</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>

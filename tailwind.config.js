@@ -8,10 +8,12 @@ module.exports = {
         // => @media (min-width: 0px and max-width: 300px) { ... }
         sm: { min: "300px", max: "600px" },
         // => @media (min-width: 300px and max-width: 600px) { ... }
-        md: { min: "600px", max: "800px" },
-        // => @media (min-width: 600px and max-width: 900px) { ... }
-        lg: { min: "800px" },
-        // => @media (min-width: 980px ) { ... }
+        md: { min: "600px", max: "900px" },
+        // => @media (min-width: 600px and max-width: 800px) { ... }
+        lg: { min: "900px", max: "1200px" },
+        // => @media (min-width:900px and max-width: 1200px ) { ... }
+        xl: { min: "1200px"},
+        // => @media (min-width:1200px ) { ... }
       },
       colors: {
         primary: "#ff3333",
