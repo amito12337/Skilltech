@@ -311,30 +311,30 @@ header h1 span {
   background: var(--secondary-color);
 }
 .Services .bef-price-list .price-list {
-  @apply w-[80%] ml-[10%];
+  @apply w-[80%] ml-[10%] sm:w-[94%] sm:ml-[3%];
 }
 .Services .bef-price-list .price-list .head p {
   @apply m-0 text-primary font-medium text-center text-4xl py-3;
   font-family: var(--body-font);
 }
 .Services .bef-price-list .price-list .head h1 {
-  @apply text-white text-center font-semibold text-8xl mt-4 mb-12;
+  @apply text-white text-center font-semibold text-8xl sm:text-[5rem] mt-4 mb-12;
 }
 .Services .bef-price-list .price-list .price-table {
-  @apply grid grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 justify-between gap-9;
+  @apply grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1  gap-9 md:gap-0 sm:gap-0 xs:gap-0;
 }
 .Services .bef-price-list .price-list .price-table .column .header {
-  @apply px-4 my-[2.75rem] lg:my-6 flex justify-between items-center h-[45px] md:h-[55px] xs:h-[55px];
+  @apply px-4 my-[2.75rem] lg:my-6 md:mt-3 md:mb-0  sm:mt-5 sm:mb-0 flex justify-between items-center ;
 }
 .Services .bef-price-list .price-list .price-table .column .header h1 {
-  @apply text-4xl text-white font-semibold lg:text-3xl;
+  @apply text-red-500 text-4xl font-semibold lg:font-medium lg:text-[1.7rem] sm:text-[1.5rem] xs:text-[1.4rem];
   font-family: var(--body-font);
 }
 .Services .bef-price-list .price-list .price-table .column .header .price {
-  @apply text-2xl text-white font-medium m-0;
+  @apply text-2xl text-red-500 font-medium m-0;
 }
 .Services .bef-price-list .price-list .price-table .column .Service-desc {
-  @apply m-0 mt-[1rem] text-white text-3xl font-medium px-4 xl:h-[235px] lg:h-[350px] h-[190px] md:h-[180px] sm:h-[120px] sm:pt-6 md:pt-6 lg:pt-3;
+  @apply m-0 mt-[1.2rem] text-white text-3xl sm:text-2xl font-medium lg:font-normal px-4 xl:h-[235px] lg:h-[350px] md:my-9 sm:my-9 lg:pt-3;
 }
 .Services .bef-price-list .price-list .price-table .column hr {
   @apply bg-primary border-none;
@@ -347,7 +347,7 @@ header h1 span {
   @apply relative;
 }
 .Section2-at-services img {
-  @apply relative h-[400px] sm:h-[790px] xs:h-[950px] md:h-[500px] object-cover;
+  @apply relative xl:h-[560px] lg:h-[560px] md:h-[850px] sm:h-[1376px] xs:h-[950px] object-cover;
 }
 .Section2-at-services .inside-section2 {
   @apply absolute h-[80%] bottom-[10%] left-[10%];
@@ -362,9 +362,7 @@ header h1 span {
   @apply text-white text-2xl font-medium text-center m-0 py-2 px-4;
 }
 .Section2-at-services .inside-section2 .main {
-  @apply grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-7;
-  width: 80%;
-  margin: 30px 0px 0px 10%;
+  @apply grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-7 lg:gap-2 w-[80%] mt-[30px] ml-[10%] lg:w-[100%] lg:mt-[30px] lg:ml-0;
 }
 .Section2-at-services .inside-section2 .main div {
   padding: 20px;
@@ -401,7 +399,7 @@ header h1 span {
   @apply flex items-center justify-between;
 }
 .What-our-client-say .main .feedlbacks .inside-feedlbacks {
-  @apply grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-14;
+  @apply grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-14;
 }
 .What-our-client-say .main .feedlbacks .inside-feedlbacks .bef-feedlback hr {
   @apply bg-primary border-none mb-2;
@@ -427,7 +425,6 @@ header h1 span {
   .bef-feedlback
   .informations {
   @apply flex items-center;
-  width: 250px;
 }
 .What-our-client-say
   .main
@@ -447,7 +444,7 @@ header h1 span {
   .informations
   .identifications
   h1 {
-  @apply text-4xl text-white font-semibold ml-9;
+  @apply text-4xl text-white font-semibold ml-9 lg:text-3xl sm:text-[1.65rem] text-red-400;
 }
 .What-our-client-say
   .main

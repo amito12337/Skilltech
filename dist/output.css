@@ -1859,6 +1859,13 @@ header h1 span {
   width: 80%;
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  .Services .bef-price-list .price-list {
+    margin-left: 3%;
+    width: 94%;
+  }
+}
+
 .Services .bef-price-list .price-list .head p {
   margin: 0px;
   padding-top: 0.75rem;
@@ -1883,22 +1890,36 @@ header h1 span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  .Services .bef-price-list .price-list .head h1 {
+    font-size: 5rem;
+  }
+}
+
 .Services .bef-price-list .price-list .price-table {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  justify-content: space-between;
   gap: 2.25rem;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
   .Services .bef-price-list .price-list .price-table {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .Services .bef-price-list .price-list .price-table {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0px;
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
   .Services .bef-price-list .price-list .price-table {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0px;
   }
 }
 
@@ -1906,16 +1927,23 @@ header h1 span {
   margin-top: 2.75rem;
   margin-bottom: 2.75rem;
   display: flex;
-  height: 45px;
   align-items: center;
   justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  .Services .bef-price-list .price-list .price-table .column .header {
+    margin-top: 1.25rem;
+    margin-bottom: 0px;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 900px) {
   .Services .bef-price-list .price-list .price-table .column .header {
-    height: 55px;
+    margin-top: 0.75rem;
+    margin-bottom: 0px;
   }
 }
 
@@ -1926,24 +1954,30 @@ header h1 span {
   }
 }
 
-@media (min-width: 0px) and (max-width: 300px) {
-  .Services .bef-price-list .price-list .price-table .column .header {
-    height: 55px;
-  }
-}
-
 .Services .bef-price-list .price-list .price-table .column .header h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .Services .bef-price-list .price-list .price-table .column .header h1 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
   .Services .bef-price-list .price-list .price-table .column .header h1 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  .Services .bef-price-list .price-list .price-table .column .header h1 {
+    font-size: 1.4rem;
   }
 }
 
@@ -1957,13 +1991,12 @@ header h1 span {
   line-height: 2rem;
   font-weight: 500;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .Services .bef-price-list .price-list .price-table .column .Service-desc {
   margin: 0px;
-  margin-top: 1rem;
-  height: 190px;
+  margin-top: 1.2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1.875rem;
@@ -1975,15 +2008,17 @@ header h1 span {
 
 @media (min-width: 300px) and (max-width: 600px) {
   .Services .bef-price-list .price-list .price-table .column .Service-desc {
-    height: 120px;
-    padding-top: 1.5rem;
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
   .Services .bef-price-list .price-list .price-table .column .Service-desc {
-    height: 180px;
-    padding-top: 1.5rem;
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
   }
 }
 
@@ -1991,6 +2026,7 @@ header h1 span {
   .Services .bef-price-list .price-list .price-table .column .Service-desc {
     height: 350px;
     padding-top: 0.75rem;
+    font-weight: 400;
   }
 }
 
@@ -2015,20 +2051,31 @@ header h1 span {
 
 .Section2-at-services img {
   position: relative;
-  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
   .Section2-at-services img {
-    height: 790px;
+    height: 1376px;
   }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
   .Section2-at-services img {
-    height: 500px;
+    height: 850px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .Section2-at-services img {
+    height: 560px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Section2-at-services img {
+    height: 560px;
   }
 }
 
@@ -2074,7 +2121,10 @@ header h1 span {
 }
 
 .Section2-at-services .inside-section2 .main {
+  margin-top: 30px;
+  margin-left: 10%;
   display: grid;
+  width: 80%;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.75rem;
 }
@@ -2091,15 +2141,19 @@ header h1 span {
   }
 }
 
+@media (min-width: 900px) and (max-width: 1200px) {
+  .Section2-at-services .inside-section2 .main {
+    margin-top: 30px;
+    margin-left: 0px;
+    width: 100%;
+    gap: 0.5rem;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 300px) {
   .Section2-at-services .inside-section2 .main {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-}
-
-.Section2-at-services .inside-section2 .main {
-  width: 80%;
-  margin: 30px 0px 0px 10%;
 }
 
 .Section2-at-services .inside-section2 .main div {
@@ -2218,6 +2272,12 @@ header h1 span {
   }
 }
 
+@media (min-width: 1200px) {
+  .What-our-client-say .main .feedlbacks .inside-feedlbacks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 0px) and (max-width: 300px) {
   .What-our-client-say .main .feedlbacks .inside-feedlbacks {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -2262,7 +2322,6 @@ header h1 span {
   .informations {
   display: flex;
   align-items: center;
-  width: 250px;
 }
 
 .What-our-client-say
@@ -2288,8 +2347,36 @@ header h1 span {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
-  --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .What-our-client-say
+  .main
+  .feedlbacks
+  .inside-feedlbacks
+  .bef-feedlback
+  .informations
+  .identifications
+  h1 {
+    font-size: 1.65rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .What-our-client-say
+  .main
+  .feedlbacks
+  .inside-feedlbacks
+  .bef-feedlback
+  .informations
+  .identifications
+  h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 .What-our-client-say
@@ -2648,8 +2735,20 @@ footer .Skilltech2 p {
   }
 }
 
+@media (min-width: 600px) and (max-width: 900px) {
+  .md\:block {
+    display: block;
+  }
+}
+
 @media (min-width: 900px) and (max-width: 1200px) {
   .lg\:block {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:block {
     display: block;
   }
 }
