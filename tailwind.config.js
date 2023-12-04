@@ -9,7 +9,7 @@ module.exports = {
         sm: { min: "300px", max: "600px" },
         // => @media (min-width: 300px and max-width: 600px) { ... }
         md: { min: "600px", max: "900px" },
-        // => @media (min-width: 600px and max-width: 800px) { ... }
+        // => @media (min-width: 600px and max-width: 900px) { ... }
         lg: { min: "900px", max: "1200px" },
         // => @media (min-width:900px and max-width: 1200px ) { ... }
         xl: { min: "1200px"},

@@ -16,9 +16,7 @@ function showMenu() {
     main.style.display = "none";
     footer.style.display = "none";
     body.style.height = "100vh";
-    console.log("Menu is hidden, showing it now.");
   } else {
-    console.log("Menu is visible, hiding it now.");
     dropMenu.classList.add("hidden");
     menuBarIcon.classList.remove("fa-xmark");
     menuBarIcon.classList.add("fa-bars");

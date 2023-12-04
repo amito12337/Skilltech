@@ -40,7 +40,7 @@ img {
 /* About Header Of Pages*/
 
 header {
-  @apply w-full fixed top-0 z-10;
+  @apply w-full fixed top-0 z-10 bg-opacity-0;
 }
 .header-bg {
   background-image: var(--color-bg-linear);
@@ -69,7 +69,7 @@ header h1 span {
   @apply lg:hidden xl:hidden  cursor-pointer transition duration-1000 ease-linear  hover:text-red-500;
 }
 .dropdown-menu {
-  @apply lg:hidden xl:hidden absolute text-center mb-6 w-full lg:mt-[620px] mt-[730px];
+  @apply lg:hidden xl:hidden absolute text-center mb-6 w-full mt-[620px] md:mt-[730px];
 }
 
 .icon-menu {
@@ -196,23 +196,20 @@ header h1 span {
   background: var(--secondary-color);
 }
 .section1-at-about .inside-section-1 {
-  @apply grid grid-cols-1 lg:grid-cols-2;
+  @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2;
 }
-.section1-at-about .inside-section-1 .col-1 {
-  @apply p-5;
-}
-.section1-at-about .inside-section-1 .col-2 {
-  @apply p-5;
+.section1-at-about .inside-section-1 div {
+  @apply p-5 lg:px-5 lg:py-1 sm:px-5 sm:py-1;
 }
 .section1-at-about .inside-section-1 .col-1 h1 {
   @apply text-primary text-5xl m-2;
 }
 .section1-at-about .inside-section-1 .col-1 p {
-  @apply text-7xl m-0 my-8 xs:my-4 xs:leading-[40px] sm:leading-[40px] md:leading-[46px] font-bold text-white leading-[57px];
+  @apply text-6xl md:text-5xl sm:text-[2.75rem] xs:text-[2.5rem] m-0 my-8 sm:m-0 lg:mt-11 md:m-0 xs:my-4 font-bold text-white;
   font-family: var(--bodyFont);
 }
 .section1-at-about .inside-section-1 .col-2 p {
-  @apply text-white text-3xl m-2 leading-[24px] md:leading-[30px] sm:leading-[23px];
+  @apply text-white text-3xl m-2;
   font-family: var(--bodyFont);
 }
 
@@ -221,7 +218,7 @@ header h1 span {
   background: var(--secondary-color);
 }
 .section-2-at-about .head h1 {
-  @apply text-8xl text-white font-mono font-extrabold text-center;
+  @apply text-8xl md:text-[5rem] sm:text-[4rem] text-white font-mono font-extrabold text-center;
 }
 .section-2-at-about .head p {
   @apply text-3xl text-white font-semibold mt-7 mb-20 m-0 text-center;
@@ -236,40 +233,39 @@ header h1 span {
   margin-bottom: 19px;
 }
 .section-2-at-about .inside-it .item img {
-  @apply lg:w-[80%] lg:ml-[10%] ml-[20%] w-[60%];
+  @apply lg:w-[80%] lg:ml-[10%] ml-[15%] w-[70%];
 }
 .section-2-at-about .inside-it .item6 img {
   @apply lg:w-[80%] lg:ml-[20%] ml-[26%] w-[60%];
 }
 .section-2-at-about .inside-it .item h1 {
-  @apply lg:text-6xl text-8xl text-white py-3 text-center font-mono font-extrabold;
+  @apply lg:text-6xl text-7xl text-white py-3 text-center font-mono font-extrabold;
 }
 .section-2-at-about .inside-it .item p {
-  @apply m-0 lg:text-3xl text-5xl text-center py-4 text-white font-semibold;
+  @apply m-0 text-5xl lg:text-4xl md:text-[2.4rem] text-center py-4 text-white font-semibold;
 }
 
-.section-3-at-contact {
+.section-3-at-about {
+  @apply my-[50px];
   background: var(--secondary-color);
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
-.section-3-at-contact h1 {
-  @apply text-white text-7xl text-center font-bold leading-[55px] py-24;
+.section-3-at-about h1 {
+  @apply text-white text-[4rem] sm:text-[3.5rem] xs:text-[2.7rem] text-center font-semibold py-[2rem];
   font-family: var(--bodyFont);
 }
 
-.section-4-at-contact {
+.section-4-at-about {
   background: var(--secondary-color);
 }
-.section-4-at-contact .main h1 {
-  @apply text-8xl text-white font-bold text-center p-10 xs:text-7xl;
+.section-4-at-about .main h1 {
+  @apply text-[6rem] sm:text-[3.9rem] text-white font-semibold text-center p-10 xs:text-7xl;
   font-family: var(--bodyFont);
 }
-.section-4-at-contact .main p {
-  @apply w-[80%] ml-[10%] leading-[28px] m-0 mb-6 lg:text-center md:text-center text-white text-3xl font-semibold;
+.section-4-at-about .main p {
+  @apply w-[80%] ml-[10%] m-0 mb-6 lg:text-center md:text-center text-white text-3xl font-semibold;
 }
 
-.section-4-at-contact #imgs {
+.section-4-at-about #imgs {
   @apply w-[80%] ml-[10%] grid grid-cols-6 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1;
 }
 /* About Main Of About Page */
@@ -324,7 +320,7 @@ header h1 span {
   @apply grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1  gap-9 md:gap-0 sm:gap-0 xs:gap-0;
 }
 .Services .bef-price-list .price-list .price-table .column .header {
-  @apply px-4 my-[2.75rem] lg:my-6 md:mt-3 md:mb-0  sm:mt-5 sm:mb-0 flex justify-between items-center ;
+  @apply px-4 my-[2.75rem] lg:my-6 md:mt-3 md:mb-0  sm:mt-5 sm:mb-0 flex justify-between items-center lg:h-[50px] xl:h-[60px];
 }
 .Services .bef-price-list .price-list .price-table .column .header h1 {
   @apply text-red-500 text-4xl font-semibold lg:font-medium lg:text-[1.7rem] sm:text-[1.5rem] xs:text-[1.4rem];
@@ -334,7 +330,7 @@ header h1 span {
   @apply text-2xl text-red-500 font-medium m-0;
 }
 .Services .bef-price-list .price-list .price-table .column .Service-desc {
-  @apply m-0 mt-[1.2rem] text-white text-3xl sm:text-2xl font-medium lg:font-normal px-4 xl:h-[235px] lg:h-[350px] md:my-9 sm:my-9 lg:pt-3;
+  @apply m-0 mt-[1.2rem] text-white text-3xl sm:text-2xl font-medium lg:font-normal px-4 xl:h-[235px] lg:h-[380px] md:my-9 sm:my-9 lg:pt-3;
 }
 .Services .bef-price-list .price-list .price-table .column hr {
   @apply bg-primary border-none;
@@ -466,18 +462,17 @@ header h1 span {
 }
 
 .have-a-question {
-  @apply grid grid-cols-1 lg:grid-cols-3 gap-14 md:w-[100%] md:text-center sm:w-[100%] sm:text-center xs:w-[100%] xs:text-center;
+  @apply grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 xl:gap-[2.2rem] lg:gap-[2.2rem] md:w-[100%] md:text-center sm:w-[100%] sm:text-center xs:w-[100%] xs:text-center;
 }
 .have-a-question .col {
-  @apply py-6 pl-3 md:w-[80%] md:ml-[5%] sm:w-[80%] sm:ml-[5%] xs:w-[80%] xs:ml-[5%];
+  @apply xl:mt-[6rem] lg:mt-[6rem]  md:w-[80%] md:ml-[5%] sm:w-[80%] sm:ml-[5%] xs:w-[80%] xs:ml-[5%];
 }
 .have-a-question .col-1 h1 {
-  @apply text-white text-7xl font-bold;
+  @apply text-white sm:text-5xl xs:text-[2.5rem] text-6xl font-semibold lg:text-[3.25rem] xl:text-[3.25rem];
   font-family: var(--body-font);
 }
 .have-a-question .col-1 p {
   @apply text-white text-2xl pt-5 font-medium m-0;
-  line-height: 20px;
   font-family: var(--body-font);
 }
 .have-a-question .col-2 div {
@@ -496,10 +491,9 @@ header h1 span {
   height: 360px;
   width: 100%;
   position: relative;
-  padding: 10px 0 10px 0;
 }
 .have-a-question .col-3 #colored-lines-form .btn {
-  @apply py-5 px-8 lg:absolute lg:bottom-6 lg:ml-[37%];
+  @apply py-5 px-8 lg:ml-[30%] xl:ml-[33%];
 }
 .have-a-question .col-3 #colored-lines-form div {
   width: 80%;
@@ -516,7 +510,7 @@ header h1 span {
 }
 .have-a-question .col-3 #colored-lines-form .colored-line input {
   position: absolute;
-  top: -20px; /* يمكنك تعديل هذا الرقم حسب التصميم الخاص بك */
+  top: -20px;
   border: none;
   outline: none;
   background: transparent;
@@ -537,16 +531,17 @@ footer {
 }
 
 footer .social-media {
-  @apply sm:m-3 m-12 text-center;
+  @apply sm:m-3 m-[2rem] text-center;
 }
 footer .social-media h1 {
-  @apply text-5xl font-bold text-primary mb-10;
+  @apply text-5xl lg:text-4xl sm:text-4xl font-bold text-primary mb-10;
 }
 footer .social-media a {
-  @apply text-6xl my-4 xl:mx-8 lg:mx-[2rem];
+  @apply text-6xl my-4  lg:mx-[2rem] xl:mx-0;
 }
+/* fix social media icons problem between width(335px and 440px) */
 footer .social-media i {
-  @apply text-6xl  my-4 mx-5 xs:mx-9;
+  @apply text-6xl  my-4 mx-5 xl:mr-0;
   color: #b3bccb;
 }
 footer .social-media i:hover,
@@ -556,10 +551,10 @@ footer .site-menu ul li a:hover {
 }
 
 footer .site-menu {
-  @apply sm:m-3  m-12;
+  @apply sm:m-3 m-[2rem];
 }
 footer .site-menu h1 {
-  @apply font-bold text-primary text-5xl text-center;
+  @apply font-bold text-primary text-5xl lg:text-4xl sm:text-4xl text-center;
 }
 footer .site-menu ul {
   @apply text-center mt-10;
@@ -572,10 +567,10 @@ footer .site-menu ul li a {
 }
 
 footer .Skilltech2 {
-  @apply mt-12;
+  @apply mt-[2rem];
 }
 footer .Skilltech2 h1 {
-  @apply text-5xl text-center text-primary font-bold;
+  @apply text-5xl lg:text-4xl sm:text-4xl text-center text-primary font-bold;
 }
 footer .Skilltech2 p {
   @apply text-3xl  text-center m-0 font-semibold text-white my-10;

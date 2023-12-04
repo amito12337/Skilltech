@@ -534,10 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .relative {
   position: relative;
 }
@@ -650,6 +646,7 @@ header {
   top: 0px;
   z-index: 10;
   width: 100%;
+  --tw-bg-opacity: 0;
 }
 
 .header-bg {
@@ -826,14 +823,19 @@ header h1 span {
 .dropdown-menu {
   position: absolute;
   margin-bottom: 1.5rem;
-  margin-top: 730px;
+  margin-top: 620px;
   width: 100%;
   text-align: center;
 }
 
+@media (min-width: 600px) and (max-width: 900px) {
+  .dropdown-menu {
+    margin-top: 730px;
+  }
+}
+
 @media (min-width: 900px) and (max-width: 1200px) {
   .dropdown-menu {
-    margin-top: 620px;
     display: none;
   }
 }
@@ -1445,12 +1447,32 @@ header h1 span {
   }
 }
 
-.section1-at-about .inside-section-1 .col-1 {
+@media (min-width: 1200px) {
+  .section1-at-about .inside-section-1 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.section1-at-about .inside-section-1 div {
   padding: 1.25rem;
 }
 
-.section1-at-about .inside-section-1 .col-2 {
-  padding: 1.25rem;
+@media (min-width: 300px) and (max-width: 600px) {
+  .section1-at-about .inside-section-1 div {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .section1-at-about .inside-section-1 div {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
 }
 
 .section1-at-about .inside-section-1 .col-1 h1 {
@@ -1465,23 +1487,31 @@ header h1 span {
   margin: 0px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 4.5rem;
+  font-size: 3.75rem;
   line-height: 1;
   font-weight: 700;
-  line-height: 57px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
   .section1-at-about .inside-section-1 .col-1 p {
-    line-height: 40px;
+    margin: 0px;
+    font-size: 2.75rem;
   }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
   .section1-at-about .inside-section-1 .col-1 p {
-    line-height: 46px;
+    margin: 0px;
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .section1-at-about .inside-section-1 .col-1 p {
+    margin-top: 2.75rem;
   }
 }
 
@@ -1489,7 +1519,7 @@ header h1 span {
   .section1-at-about .inside-section-1 .col-1 p {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    line-height: 40px;
+    font-size: 2.5rem;
   }
 }
 
@@ -1501,24 +1531,8 @@ header h1 span {
   margin: 0.5rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  line-height: 24px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (min-width: 300px) and (max-width: 600px) {
-  .section1-at-about .inside-section-1 .col-2 p {
-    line-height: 23px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 900px) {
-  .section1-at-about .inside-section-1 .col-2 p {
-    line-height: 30px;
-  }
-}
-
-.section1-at-about .inside-section-1 .col-2 p {
   font-family: var(--bodyFont);
 }
 
@@ -1536,6 +1550,18 @@ header h1 span {
   font-weight: 800;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .section-2-at-about .head h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .section-2-at-about .head h1 {
+    font-size: 5rem;
+  }
 }
 
 .section-2-at-about .head p {
@@ -1585,8 +1611,8 @@ header h1 span {
 }
 
 .section-2-at-about .inside-it .item img {
-  margin-left: 20%;
-  width: 60%;
+  margin-left: 15%;
+  width: 70%;
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
@@ -1613,7 +1639,7 @@ header h1 span {
   padding-bottom: 0.75rem;
   text-align: center;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 6rem;
+  font-size: 4.5rem;
   line-height: 1;
   font-weight: 800;
   --tw-text-opacity: 1;
@@ -1639,58 +1665,82 @@ header h1 span {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .section-2-at-about .inside-it .item p {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: 2.4rem;
   }
 }
 
-.section-3-at-contact {
-  background: var(--secondary-color);
+@media (min-width: 900px) and (max-width: 1200px) {
+  .section-2-at-about .inside-it .item p {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.section-3-at-about {
   margin-top: 50px;
   margin-bottom: 50px;
-}
-
-.section-3-at-contact h1 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  font-size: 4.5rem;
-  line-height: 1;
-  font-weight: 700;
-  line-height: 55px;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  font-family: var(--bodyFont);
-}
-
-.section-4-at-contact {
   background: var(--secondary-color);
 }
 
-.section-4-at-contact .main h1 {
-  padding: 2.5rem;
+.section-3-at-about h1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
-  font-size: 6rem;
-  line-height: 1;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .section-3-at-about h1 {
+    font-size: 3.5rem;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
-  .section-4-at-contact .main h1 {
+  .section-3-at-about h1 {
+    font-size: 2.7rem;
+  }
+}
+
+.section-3-at-about h1 {
+  font-family: var(--bodyFont);
+}
+
+.section-4-at-about {
+  background: var(--secondary-color);
+}
+
+.section-4-at-about .main h1 {
+  padding: 2.5rem;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .section-4-at-about .main h1 {
+    font-size: 3.9rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  .section-4-at-about .main h1 {
     font-size: 4.5rem;
     line-height: 1;
   }
 }
 
-.section-4-at-contact .main h1 {
+.section-4-at-about .main h1 {
   font-family: var(--bodyFont);
 }
 
-.section-4-at-contact .main p {
+.section-4-at-about .main p {
   margin: 0px;
   margin-left: 10%;
   margin-bottom: 1.5rem;
@@ -1698,24 +1748,23 @@ header h1 span {
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 600;
-  line-height: 28px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-  .section-4-at-contact .main p {
+  .section-4-at-about .main p {
     text-align: center;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
-  .section-4-at-contact .main p {
+  .section-4-at-about .main p {
     text-align: center;
   }
 }
 
-.section-4-at-contact #imgs {
+.section-4-at-about #imgs {
   margin-left: 10%;
   display: grid;
   width: 80%;
@@ -1723,19 +1772,19 @@ header h1 span {
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
-  .section-4-at-contact #imgs {
+  .section-4-at-about #imgs {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-  .section-4-at-contact #imgs {
+  .section-4-at-about #imgs {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 0px) and (max-width: 300px) {
-  .section-4-at-contact #imgs {
+  .section-4-at-about #imgs {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
@@ -1951,6 +2000,13 @@ header h1 span {
   .Services .bef-price-list .price-list .price-table .column .header {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Services .bef-price-list .price-list .price-table .column .header {
+    height: 60px;
   }
 }
 
@@ -2024,7 +2080,7 @@ header h1 span {
 
 @media (min-width: 900px) and (max-width: 1200px) {
   .Services .bef-price-list .price-list .price-table .column .Service-desc {
-    height: 350px;
+    height: 380px;
     padding-top: 0.75rem;
     font-weight: 400;
   }
@@ -2408,7 +2464,6 @@ header h1 span {
 .have-a-question {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 3.5rem;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
@@ -2428,6 +2483,14 @@ header h1 span {
 @media (min-width: 900px) and (max-width: 1200px) {
   .have-a-question {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .have-a-question {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.2rem;
   }
 }
 
@@ -2436,12 +2499,6 @@ header h1 span {
     width: 100%;
     text-align: center;
   }
-}
-
-.have-a-question .col {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 0.75rem;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
@@ -2458,6 +2515,18 @@ header h1 span {
   }
 }
 
+@media (min-width: 900px) and (max-width: 1200px) {
+  .have-a-question .col {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .have-a-question .col {
+    margin-top: 6rem;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 300px) {
   .have-a-question .col {
     margin-left: 5%;
@@ -2466,11 +2535,39 @@ header h1 span {
 }
 
 .have-a-question .col-1 h1 {
-  font-size: 4.5rem;
+  font-size: 3.75rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .have-a-question .col-1 h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .have-a-question .col-1 h1 {
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .have-a-question .col-1 h1 {
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 300px) {
+  .have-a-question .col-1 h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.have-a-question .col-1 h1 {
   font-family: var(--body-font);
 }
 
@@ -2482,7 +2579,6 @@ header h1 span {
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  line-height: 20px;
   font-family: var(--body-font);
 }
 
@@ -2515,7 +2611,6 @@ header h1 span {
   height: 360px;
   width: 100%;
   position: relative;
-  padding: 10px 0 10px 0;
 }
 
 .have-a-question .col-3 #colored-lines-form .btn {
@@ -2527,9 +2622,13 @@ header h1 span {
 
 @media (min-width: 900px) and (max-width: 1200px) {
   .have-a-question .col-3 #colored-lines-form .btn {
-    position: absolute;
-    bottom: 1.5rem;
-    margin-left: 37%;
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .have-a-question .col-3 #colored-lines-form .btn {
+    margin-left: 33%;
   }
 }
 
@@ -2551,7 +2650,6 @@ header h1 span {
 .have-a-question .col-3 #colored-lines-form .colored-line input {
   position: absolute;
   top: -20px;
-  /* يمكنك تعديل هذا الرقم حسب التصميم الخاص بك */
   border: none;
   outline: none;
   background: transparent;
@@ -2598,7 +2696,7 @@ footer {
 }
 
 footer .social-media {
-  margin: 3rem;
+  margin: 2rem;
   text-align: center;
 }
 
@@ -2617,6 +2715,20 @@ footer .social-media h1 {
   color: rgb(255 51 51 / var(--tw-text-opacity));
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  footer .social-media h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  footer .social-media h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 footer .social-media a {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -2633,10 +2745,12 @@ footer .social-media a {
 
 @media (min-width: 1200px) {
   footer .social-media a {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
+
+/* fix social media icons problem between width(335px and 440px) */
 
 footer .social-media i {
   margin-top: 1rem;
@@ -2647,10 +2761,9 @@ footer .social-media i {
   line-height: 1;
 }
 
-@media (min-width: 0px) and (max-width: 300px) {
+@media (min-width: 1200px) {
   footer .social-media i {
-    margin-left: 2.25rem;
-    margin-right: 2.25rem;
+    margin-right: 0px;
   }
 }
 
@@ -2665,7 +2778,7 @@ footer .site-menu ul li a:hover {
 }
 
 footer .site-menu {
-  margin: 3rem;
+  margin: 2rem;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
@@ -2681,6 +2794,20 @@ footer .site-menu h1 {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 51 51 / var(--tw-text-opacity));
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  footer .site-menu h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  footer .site-menu h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 footer .site-menu ul {
@@ -2703,7 +2830,7 @@ footer .site-menu ul li a {
 }
 
 footer .Skilltech2 {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 footer .Skilltech2 h1 {
@@ -2713,6 +2840,20 @@ footer .Skilltech2 h1 {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 51 51 / var(--tw-text-opacity));
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  footer .Skilltech2 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  footer .Skilltech2 h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 footer .Skilltech2 p {
@@ -2750,11 +2891,5 @@ footer .Skilltech2 p {
 @media (min-width: 1200px) {
   .xl\:block {
     display: block;
-  }
-}
-
-@media (min-width: 0px) and (max-width: 300px) {
-  .xs\:h-\[60px\] {
-    height: 60px;
   }
 }
